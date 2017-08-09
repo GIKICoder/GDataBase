@@ -29,7 +29,6 @@
 		2B1E275C1F38179300D8006F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E275B1F38179300D8006F /* libsqlite3.tbd */; };
 		2B1E275E1F3817E700D8006F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E275D1F3817E700D8006F /* libsqlite3.0.tbd */; };
 		2B3295A61F381A6E003DCEB8 /* GAppsDataViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295A51F381A6E003DCEB8 /* GAppsDataViewModel.m */; };
-		2B3295A81F381C70003DCEB8 /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B3295A71F381C70003DCEB8 /* model.json */; };
 		2B3295AB1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295AA1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m */; };
 		2B3295B21F381D70003DCEB8 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295AE1F381D70003DCEB8 /* NSObject+YYModel.m */; };
 		2B3295B31F381D70003DCEB8 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295B01F381D70003DCEB8 /* YYClassInfo.m */; };
@@ -37,6 +36,7 @@
 		2B3295BC1F383414003DCEB8 /* GBlackListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295BB1F383414003DCEB8 /* GBlackListModel.m */; };
 		2B3295BF1F383833003DCEB8 /* GMutilKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295BE1F383833003DCEB8 /* GMutilKeyModel.m */; };
 		2B3295D41F387EAF003DCEB8 /* GTableA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295D31F387EAF003DCEB8 /* GTableA.m */; };
+		2BABCF271F3AF2FC009D0FFC /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BABCF261F3AF2FC009D0FFC /* model.json */; };
 		45458F49D2C5BDBE5B49970F /* libPods-GDataBaseExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A10E127E0C208F43EC4999 /* libPods-GDataBaseExampleTests.a */; };
 		4C466E4573824C35A134FCA3 /* libPods-GDataBaseExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0146B48559EC6365EBD4DDD0 /* libPods-GDataBaseExample.a */; };
 		A633FE19BBB49974FC84097E /* libPods-GDataBaseExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A67CB92E07480F0A68E67EC8 /* libPods-GDataBaseExampleUITests.a */; };
@@ -106,7 +106,6 @@
 		2B1E275D1F3817E700D8006F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		2B3295A41F381A6E003DCEB8 /* GAppsDataViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAppsDataViewModel.h; sourceTree = "<group>"; };
 		2B3295A51F381A6E003DCEB8 /* GAppsDataViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAppsDataViewModel.m; sourceTree = "<group>"; };
-		2B3295A71F381C70003DCEB8 /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = model.json; path = ../../model.json; sourceTree = "<group>"; };
 		2B3295A91F381CEF003DCEB8 /* NSJSONSerialization+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+Utils.h"; sourceTree = "<group>"; };
 		2B3295AA1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+Utils.m"; sourceTree = "<group>"; };
 		2B3295AD1F381D70003DCEB8 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
@@ -122,6 +121,7 @@
 		2B3295BE1F383833003DCEB8 /* GMutilKeyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMutilKeyModel.m; sourceTree = "<group>"; };
 		2B3295D21F387EAF003DCEB8 /* GTableA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTableA.h; sourceTree = "<group>"; };
 		2B3295D31F387EAF003DCEB8 /* GTableA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTableA.m; sourceTree = "<group>"; };
+		2BABCF261F3AF2FC009D0FFC /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
 		57D15F781867BC213C7A2BBC /* Pods-GDataBaseExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleUITests/Pods-GDataBaseExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6F084B7AC6A8239B1C27B9EC /* Pods-GDataBaseExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleUITests/Pods-GDataBaseExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A67CB92E07480F0A68E67EC8 /* libPods-GDataBaseExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,7 +206,7 @@
 				2B0136211F396D1500ABF460 /* GAutoPrimaryKeyModel.m */,
 				2B3295A91F381CEF003DCEB8 /* NSJSONSerialization+Utils.h */,
 				2B3295AA1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m */,
-				2B3295A71F381C70003DCEB8 /* model.json */,
+				2BABCF261F3AF2FC009D0FFC /* model.json */,
 				2B1E270D1F38172500D8006F /* Main.storyboard */,
 				2B1E27101F38172500D8006F /* Assets.xcassets */,
 				2B1E27121F38172500D8006F /* LaunchScreen.storyboard */,
@@ -449,8 +449,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B1E27531F38177400D8006F /* LICENSE.txt in Resources */,
+				2BABCF271F3AF2FC009D0FFC /* model.json in Resources */,
 				2B1E27141F38172500D8006F /* LaunchScreen.storyboard in Resources */,
-				2B3295A81F381C70003DCEB8 /* model.json in Resources */,
 				2B1E27111F38172500D8006F /* Assets.xcassets in Resources */,
 				2B1E270F1F38172500D8006F /* Main.storyboard in Resources */,
 			);
