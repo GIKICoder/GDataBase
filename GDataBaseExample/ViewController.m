@@ -56,18 +56,9 @@
     NSArray *modelJsons = [NSJSONSerialization JSONObjectWithContentsOfFile:@"model.json"];
     
     self.models = [NSArray yy_modelArrayWithClass:[GAppsDataViewModel class] json:modelJsons];
-    NSLog(@"test");
-    [self appendBaseUrlWithFormat:@"woshiformat%@,,%@",@"1",@"2"];
+
 }
 
-- (NSString *)appendBaseUrlWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2)
-{
-    va_list args;
-    va_start(args, format);
-    NSString *appendStr = [[NSString alloc] initWithFormat:format arguments:args];
-    va_end(args);
-    return [NSString stringWithFormat:@"%@%@", @"test", appendStr];
-}
 
 #pragma mark -- TableView DataSource
 
@@ -380,6 +371,21 @@
 {
     NSArray *datas = [self.database getResultDictionaryWithTableName:NSStringFromClass(GAutoPrimaryKeyModel.class) CustomCond:nil];
     NSLog(@"alldata__ %@",datas);
+}
+
+- (void)updateObject
+{
+    NSArray *objects = [self.database getAllObjectsWithClass:[GAppsDataViewModel class]];
+    GAppsDataViewModel* object = [objects firstObject];
+   ///
+    long autoPri = [object g_getAutoPrimaryKey];
+    GAppsDataViewModel * dataModel = [GAppsDataViewModel new];
+    dataModel.dataID = @"WOSHI_dataID";
+    dataModel.fields = @"1234567";
+    dataModel.dataGroup = 12;
+    dataModel.dataIndex = 12;
+    [dataModel setValue:@(autoPri) forKey:GAUTOPRIMARYKEY];
+    [self.database addObject:object];
 }
 
 - (void)saveMutiData
