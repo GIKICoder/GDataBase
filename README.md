@@ -101,6 +101,11 @@ return @{
 ### 模型存储
 
 ```
+- (BOOL)addObject:(id)model;
+会自动处理数据表建立,以及字段升级等问题. 无需单独创建数据表
+```
+
+```
 /// 单条
 - (void)insertOneRowData
 {
