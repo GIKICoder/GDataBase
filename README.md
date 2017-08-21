@@ -14,6 +14,8 @@ Features
 - 支持多主键,单一主键,自增主键数据表创建
 - 支持模型黑名单. 可以自定义部分字段不进行数据库存储操作.
 - 支持模型字段自定义序列化. 
+- 无需手动创建数据表.
+- 无需考虑数据库字段整添,自动处理数据库升级.
 
 Usage
 ==============
@@ -209,7 +211,6 @@ BOOL isSucess = [self.database deleteObject:[datas firstObject]];
 long count = [self.database countInDataBaseWithClass:[GAppsDataViewModel class] withTableName:nil cond:nil];
 }
 ```
-
 支持
 ==============
 -该项目最低支持 `iOS 7.0` 和 `Xcode 8.0`。
