@@ -15,7 +15,7 @@ Features
 - 支持模型黑名单. 可以自定义部分字段不进行数据库存储操作.
 - 支持模型字段自定义序列化. 
 - 无需手动创建数据表.
-- 无需考虑数据库字段整添,自动处理数据库升级.
+- 无需考虑数据库字段整添,自动处理数据库升级.免去升级烦恼.
 
 Usage
 ==============
@@ -49,7 +49,9 @@ self.database = [GDataBase databaseWithPath:path];
 ///在第一行注入此宏即可使用GDatabase 进行模型存储
 GDATABASE_IMPLEMENTATION_INJECT(GAppsDataViewModel)
 
-/// 如不实现此方法. 数据表默认为自增主键 'GAUTOPRIMARYKEY'
+/// 以下协议方法均可不实现
+
+/// 如不实现此方法. 数据表默认为自增主键 'GAUTOPRIMARYKEY' 
 - (NSArray<NSString *> *)g_GetCustomPrimarykey
 {
 return @[@"dataID"];//单一主键
