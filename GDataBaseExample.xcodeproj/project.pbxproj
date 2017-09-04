@@ -7,265 +7,257 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B0136221F396D1500ABF460 /* GAutoPrimaryKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0136211F396D1500ABF460 /* GAutoPrimaryKeyModel.m */; };
-		2B1E27061F38172500D8006F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E27051F38172500D8006F /* main.m */; };
-		2B1E27091F38172500D8006F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E27081F38172500D8006F /* AppDelegate.m */; };
-		2B1E270C1F38172500D8006F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E270B1F38172500D8006F /* ViewController.m */; };
-		2B1E270F1F38172500D8006F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E270D1F38172500D8006F /* Main.storyboard */; };
-		2B1E27111F38172500D8006F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E27101F38172500D8006F /* Assets.xcassets */; };
-		2B1E27141F38172500D8006F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E27121F38172500D8006F /* LaunchScreen.storyboard */; };
-		2B1E271F1F38172500D8006F /* GDataBaseExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E271E1F38172500D8006F /* GDataBaseExampleTests.m */; };
-		2B1E272A1F38172500D8006F /* GDataBaseExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E27291F38172500D8006F /* GDataBaseExampleUITests.m */; };
-		2B1E275C1F38179300D8006F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E275B1F38179300D8006F /* libsqlite3.tbd */; };
-		2B1E275E1F3817E700D8006F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E275D1F3817E700D8006F /* libsqlite3.0.tbd */; };
-		2B3295A61F381A6E003DCEB8 /* GAppsDataViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295A51F381A6E003DCEB8 /* GAppsDataViewModel.m */; };
-		2B3295AB1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295AA1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m */; };
-		2B3295B91F38314C003DCEB8 /* SQLiteReserveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295B81F38314C003DCEB8 /* SQLiteReserveModel.m */; };
-		2B3295BC1F383414003DCEB8 /* GBlackListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295BB1F383414003DCEB8 /* GBlackListModel.m */; };
-		2B3295BF1F383833003DCEB8 /* GMutilKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295BE1F383833003DCEB8 /* GMutilKeyModel.m */; };
-		2B3295D41F387EAF003DCEB8 /* GTableA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3295D31F387EAF003DCEB8 /* GTableA.m */; };
-		2BABCF271F3AF2FC009D0FFC /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BABCF261F3AF2FC009D0FFC /* model.json */; };
-		2BABCF311F3AF3DA009D0FFC /* GDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BABCF2A1F3AF3DA009D0FFC /* GDataBase.m */; };
-		2BABCF321F3AF3DA009D0FFC /* GDataBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BABCF2C1F3AF3DA009D0FFC /* GDataBaseUtils.m */; };
-		2BABCF331F3AF3DA009D0FFC /* GDBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BABCF2F1F3AF3DA009D0FFC /* GDBCore.m */; };
-		45458F49D2C5BDBE5B49970F /* libPods-GDataBaseExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A10E127E0C208F43EC4999 /* libPods-GDataBaseExampleTests.a */; };
-		4C466E4573824C35A134FCA3 /* libPods-GDataBaseExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0146B48559EC6365EBD4DDD0 /* libPods-GDataBaseExample.a */; };
-		A633FE19BBB49974FC84097E /* libPods-GDataBaseExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A67CB92E07480F0A68E67EC8 /* libPods-GDataBaseExampleUITests.a */; };
+		12F1047F5830B2EC5E7491CE /* libPods-GDataBaseExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C66DB7661C5BB2A6A325893 /* libPods-GDataBaseExample.a */; };
+		2B072F911F5D9B4F0002BF0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072F901F5D9B4F0002BF0B /* main.m */; };
+		2B072F941F5D9B4F0002BF0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072F931F5D9B4F0002BF0B /* AppDelegate.m */; };
+		2B072F971F5D9B4F0002BF0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072F961F5D9B4F0002BF0B /* ViewController.m */; };
+		2B072F9A1F5D9B4F0002BF0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B072F981F5D9B4F0002BF0B /* Main.storyboard */; };
+		2B072F9C1F5D9B4F0002BF0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B072F9B1F5D9B4F0002BF0B /* Assets.xcassets */; };
+		2B072F9F1F5D9B4F0002BF0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B072F9D1F5D9B4F0002BF0B /* LaunchScreen.storyboard */; };
+		2B072FAA1F5D9B4F0002BF0B /* GDataBaseExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FA91F5D9B4F0002BF0B /* GDataBaseExampleTests.m */; };
+		2B072FB51F5D9B4F0002BF0B /* GDataBaseExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FB41F5D9B4F0002BF0B /* GDataBaseExampleUITests.m */; };
+		2B072FCB1F5D9B670002BF0B /* GDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FC41F5D9B670002BF0B /* GDataBase.m */; };
+		2B072FCC1F5D9B670002BF0B /* GDataBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FC61F5D9B670002BF0B /* GDataBaseUtils.m */; };
+		2B072FCD1F5D9B670002BF0B /* GDBCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FC91F5D9B670002BF0B /* GDBCore.m */; };
+		2B072FD81F5D9C8A0002BF0B /* GAppsDataViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FCF1F5D9C8A0002BF0B /* GAppsDataViewModel.m */; };
+		2B072FD91F5D9C8A0002BF0B /* GAutoPrimaryKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FD11F5D9C8A0002BF0B /* GAutoPrimaryKeyModel.m */; };
+		2B072FDA1F5D9C8A0002BF0B /* GBlackListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FD31F5D9C8A0002BF0B /* GBlackListModel.m */; };
+		2B072FDB1F5D9C8A0002BF0B /* GMutilKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FD51F5D9C8A0002BF0B /* GMutilKeyModel.m */; };
+		2B072FDC1F5D9C8A0002BF0B /* GTableA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FD71F5D9C8A0002BF0B /* GTableA.m */; };
+		2B072FE21F5D9C990002BF0B /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B072FDD1F5D9C990002BF0B /* model.json */; };
+		2B072FE31F5D9C990002BF0B /* NSJSONSerialization+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FDF1F5D9C990002BF0B /* NSJSONSerialization+Utils.m */; };
+		2B072FE41F5D9C990002BF0B /* SQLiteReserveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FE11F5D9C990002BF0B /* SQLiteReserveModel.m */; };
+		761BB2747522844B6BAC16C8 /* libPods-GDataBaseExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF069136758E11870F26A5A /* libPods-GDataBaseExampleTests.a */; };
+		BD3E11C3F478D605CD75826C /* libPods-GDataBaseExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD41921522E407A3EBA4C94 /* libPods-GDataBaseExampleUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2B1E271B1F38172500D8006F /* PBXContainerItemProxy */ = {
+		2B072FA61F5D9B4F0002BF0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B1E26F91F38172500D8006F /* Project object */;
+			containerPortal = 2B072F841F5D9B4F0002BF0B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2B1E27001F38172500D8006F;
+			remoteGlobalIDString = 2B072F8B1F5D9B4F0002BF0B;
 			remoteInfo = GDataBaseExample;
 		};
-		2B1E27261F38172500D8006F /* PBXContainerItemProxy */ = {
+		2B072FB11F5D9B4F0002BF0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B1E26F91F38172500D8006F /* Project object */;
+			containerPortal = 2B072F841F5D9B4F0002BF0B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2B1E27001F38172500D8006F;
+			remoteGlobalIDString = 2B072F8B1F5D9B4F0002BF0B;
 			remoteInfo = GDataBaseExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0146B48559EC6365EBD4DDD0 /* libPods-GDataBaseExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		14C5FBEA6B3AEBC4D6789E2E /* Pods-GDataBaseExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleTests/Pods-GDataBaseExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2099B81D3C9238F62D1EDDA3 /* Pods-GDataBaseExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleTests/Pods-GDataBaseExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		2B0136201F396D1500ABF460 /* GAutoPrimaryKeyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAutoPrimaryKeyModel.h; sourceTree = "<group>"; };
-		2B0136211F396D1500ABF460 /* GAutoPrimaryKeyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAutoPrimaryKeyModel.m; sourceTree = "<group>"; };
-		2B1E27011F38172500D8006F /* GDataBaseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDataBaseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B1E27051F38172500D8006F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2B1E27071F38172500D8006F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2B1E27081F38172500D8006F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B1E270A1F38172500D8006F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2B1E270B1F38172500D8006F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2B1E270E1F38172500D8006F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2B1E27101F38172500D8006F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2B1E27131F38172500D8006F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2B1E27151F38172500D8006F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B1E271A1F38172500D8006F /* GDataBaseExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDataBaseExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B1E271E1F38172500D8006F /* GDataBaseExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDataBaseExampleTests.m; sourceTree = "<group>"; };
-		2B1E27201F38172500D8006F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B1E27251F38172500D8006F /* GDataBaseExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDataBaseExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B1E27291F38172500D8006F /* GDataBaseExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDataBaseExampleUITests.m; sourceTree = "<group>"; };
-		2B1E272B1F38172500D8006F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B1E275B1F38179300D8006F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		2B1E275D1F3817E700D8006F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		2B3295A41F381A6E003DCEB8 /* GAppsDataViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAppsDataViewModel.h; sourceTree = "<group>"; };
-		2B3295A51F381A6E003DCEB8 /* GAppsDataViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAppsDataViewModel.m; sourceTree = "<group>"; };
-		2B3295A91F381CEF003DCEB8 /* NSJSONSerialization+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+Utils.h"; sourceTree = "<group>"; };
-		2B3295AA1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+Utils.m"; sourceTree = "<group>"; };
-		2B3295B71F38314C003DCEB8 /* SQLiteReserveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteReserveModel.h; sourceTree = "<group>"; };
-		2B3295B81F38314C003DCEB8 /* SQLiteReserveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteReserveModel.m; sourceTree = "<group>"; };
-		2B3295BA1F383414003DCEB8 /* GBlackListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBlackListModel.h; sourceTree = "<group>"; };
-		2B3295BB1F383414003DCEB8 /* GBlackListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBlackListModel.m; sourceTree = "<group>"; };
-		2B3295BD1F383833003DCEB8 /* GMutilKeyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMutilKeyModel.h; sourceTree = "<group>"; };
-		2B3295BE1F383833003DCEB8 /* GMutilKeyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMutilKeyModel.m; sourceTree = "<group>"; };
-		2B3295D21F387EAF003DCEB8 /* GTableA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTableA.h; sourceTree = "<group>"; };
-		2B3295D31F387EAF003DCEB8 /* GTableA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTableA.m; sourceTree = "<group>"; };
-		2BABCF261F3AF2FC009D0FFC /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
-		2BABCF291F3AF3DA009D0FFC /* GDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBase.h; sourceTree = "<group>"; };
-		2BABCF2A1F3AF3DA009D0FFC /* GDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBase.m; sourceTree = "<group>"; };
-		2BABCF2B1F3AF3DA009D0FFC /* GDataBaseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBaseUtils.h; sourceTree = "<group>"; };
-		2BABCF2C1F3AF3DA009D0FFC /* GDataBaseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBaseUtils.m; sourceTree = "<group>"; };
-		2BABCF2D1F3AF3DA009D0FFC /* GDataObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataObjectProtocol.h; sourceTree = "<group>"; };
-		2BABCF2E1F3AF3DA009D0FFC /* GDBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBCore.h; sourceTree = "<group>"; };
-		2BABCF2F1F3AF3DA009D0FFC /* GDBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBCore.m; sourceTree = "<group>"; };
-		2BABCF301F3AF3DA009D0FFC /* GDBCoreInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBCoreInterface.h; sourceTree = "<group>"; };
-		57D15F781867BC213C7A2BBC /* Pods-GDataBaseExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleUITests/Pods-GDataBaseExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6F084B7AC6A8239B1C27B9EC /* Pods-GDataBaseExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleUITests/Pods-GDataBaseExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A67CB92E07480F0A68E67EC8 /* libPods-GDataBaseExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8A10E127E0C208F43EC4999 /* libPods-GDataBaseExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDB81C83A8BEB1B63457EC19 /* Pods-GDataBaseExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExample/Pods-GDataBaseExample.debug.xcconfig"; sourceTree = "<group>"; };
-		E29B20816C51658BF684E827 /* Pods-GDataBaseExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExample/Pods-GDataBaseExample.release.xcconfig"; sourceTree = "<group>"; };
+		0BFFB1A66FEC94A4D31FC7DD /* Pods-GDataBaseExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleTests/Pods-GDataBaseExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		226C12CC6251D5A04474D89B /* Pods-GDataBaseExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleUITests/Pods-GDataBaseExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A70A4D004FAC13F56ECC321 /* Pods-GDataBaseExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleUITests/Pods-GDataBaseExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B072F8C1F5D9B4F0002BF0B /* GDataBaseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDataBaseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B072F901F5D9B4F0002BF0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B072F921F5D9B4F0002BF0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B072F931F5D9B4F0002BF0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B072F951F5D9B4F0002BF0B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B072F961F5D9B4F0002BF0B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B072F991F5D9B4F0002BF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B072F9B1F5D9B4F0002BF0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B072F9E1F5D9B4F0002BF0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B072FA01F5D9B4F0002BF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B072FA51F5D9B4F0002BF0B /* GDataBaseExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDataBaseExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B072FA91F5D9B4F0002BF0B /* GDataBaseExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDataBaseExampleTests.m; sourceTree = "<group>"; };
+		2B072FAB1F5D9B4F0002BF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B072FB01F5D9B4F0002BF0B /* GDataBaseExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDataBaseExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B072FB41F5D9B4F0002BF0B /* GDataBaseExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDataBaseExampleUITests.m; sourceTree = "<group>"; };
+		2B072FB61F5D9B4F0002BF0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B072FC31F5D9B670002BF0B /* GDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBase.h; sourceTree = "<group>"; };
+		2B072FC41F5D9B670002BF0B /* GDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBase.m; sourceTree = "<group>"; };
+		2B072FC51F5D9B670002BF0B /* GDataBaseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataBaseUtils.h; sourceTree = "<group>"; };
+		2B072FC61F5D9B670002BF0B /* GDataBaseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataBaseUtils.m; sourceTree = "<group>"; };
+		2B072FC71F5D9B670002BF0B /* GDataObjectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataObjectProtocol.h; sourceTree = "<group>"; };
+		2B072FC81F5D9B670002BF0B /* GDBCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBCore.h; sourceTree = "<group>"; };
+		2B072FC91F5D9B670002BF0B /* GDBCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBCore.m; sourceTree = "<group>"; };
+		2B072FCA1F5D9B670002BF0B /* GDBCoreInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBCoreInterface.h; sourceTree = "<group>"; };
+		2B072FCE1F5D9C8A0002BF0B /* GAppsDataViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAppsDataViewModel.h; sourceTree = "<group>"; };
+		2B072FCF1F5D9C8A0002BF0B /* GAppsDataViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAppsDataViewModel.m; sourceTree = "<group>"; };
+		2B072FD01F5D9C8A0002BF0B /* GAutoPrimaryKeyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAutoPrimaryKeyModel.h; sourceTree = "<group>"; };
+		2B072FD11F5D9C8A0002BF0B /* GAutoPrimaryKeyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAutoPrimaryKeyModel.m; sourceTree = "<group>"; };
+		2B072FD21F5D9C8A0002BF0B /* GBlackListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBlackListModel.h; sourceTree = "<group>"; };
+		2B072FD31F5D9C8A0002BF0B /* GBlackListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBlackListModel.m; sourceTree = "<group>"; };
+		2B072FD41F5D9C8A0002BF0B /* GMutilKeyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMutilKeyModel.h; sourceTree = "<group>"; };
+		2B072FD51F5D9C8A0002BF0B /* GMutilKeyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMutilKeyModel.m; sourceTree = "<group>"; };
+		2B072FD61F5D9C8A0002BF0B /* GTableA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTableA.h; sourceTree = "<group>"; };
+		2B072FD71F5D9C8A0002BF0B /* GTableA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTableA.m; sourceTree = "<group>"; };
+		2B072FDD1F5D9C990002BF0B /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
+		2B072FDE1F5D9C990002BF0B /* NSJSONSerialization+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+Utils.h"; sourceTree = "<group>"; };
+		2B072FDF1F5D9C990002BF0B /* NSJSONSerialization+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+Utils.m"; sourceTree = "<group>"; };
+		2B072FE01F5D9C990002BF0B /* SQLiteReserveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteReserveModel.h; sourceTree = "<group>"; };
+		2B072FE11F5D9C990002BF0B /* SQLiteReserveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteReserveModel.m; sourceTree = "<group>"; };
+		2C66DB7661C5BB2A6A325893 /* libPods-GDataBaseExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF069136758E11870F26A5A /* libPods-GDataBaseExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A4012957001C9423EC571C /* Pods-GDataBaseExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExample/Pods-GDataBaseExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B468624567ED37F7BC4A604C /* Pods-GDataBaseExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExampleTests/Pods-GDataBaseExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7579C4324749E2A8FF8CC37 /* Pods-GDataBaseExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExample/Pods-GDataBaseExample.release.xcconfig"; sourceTree = "<group>"; };
+		EBD41921522E407A3EBA4C94 /* libPods-GDataBaseExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B1E26FE1F38172500D8006F /* Frameworks */ = {
+		2B072F891F5D9B4F0002BF0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1E275E1F3817E700D8006F /* libsqlite3.0.tbd in Frameworks */,
-				2B1E275C1F38179300D8006F /* libsqlite3.tbd in Frameworks */,
-				4C466E4573824C35A134FCA3 /* libPods-GDataBaseExample.a in Frameworks */,
+				12F1047F5830B2EC5E7491CE /* libPods-GDataBaseExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B1E27171F38172500D8006F /* Frameworks */ = {
+		2B072FA21F5D9B4F0002BF0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45458F49D2C5BDBE5B49970F /* libPods-GDataBaseExampleTests.a in Frameworks */,
+				761BB2747522844B6BAC16C8 /* libPods-GDataBaseExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B1E27221F38172500D8006F /* Frameworks */ = {
+		2B072FAD1F5D9B4F0002BF0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A633FE19BBB49974FC84097E /* libPods-GDataBaseExampleUITests.a in Frameworks */,
+				BD3E11C3F478D605CD75826C /* libPods-GDataBaseExampleUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B1E26F81F38172500D8006F = {
+		2B072F831F5D9B4F0002BF0B = {
 			isa = PBXGroup;
 			children = (
-				2BABCF281F3AF3DA009D0FFC /* GDataBase */,
-				2B1E27031F38172500D8006F /* GDataBaseExample */,
-				2B1E271D1F38172500D8006F /* GDataBaseExampleTests */,
-				2B1E27281F38172500D8006F /* GDataBaseExampleUITests */,
-				2B1E27021F38172500D8006F /* Products */,
-				2B1E275A1F38179300D8006F /* Frameworks */,
-				A81C913C651FC5CF5DBEAFA2 /* Pods */,
+				2B072FC21F5D9B670002BF0B /* GDataBase */,
+				2B072F8E1F5D9B4F0002BF0B /* GDataBaseExample */,
+				2B072FA81F5D9B4F0002BF0B /* GDataBaseExampleTests */,
+				2B072FB31F5D9B4F0002BF0B /* GDataBaseExampleUITests */,
+				2B072F8D1F5D9B4F0002BF0B /* Products */,
+				38F6E5CC2216F75206B27B8D /* Pods */,
+				C9910E1C8DF82641C5923B82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2B1E27021F38172500D8006F /* Products */ = {
+		2B072F8D1F5D9B4F0002BF0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B1E27011F38172500D8006F /* GDataBaseExample.app */,
-				2B1E271A1F38172500D8006F /* GDataBaseExampleTests.xctest */,
-				2B1E27251F38172500D8006F /* GDataBaseExampleUITests.xctest */,
+				2B072F8C1F5D9B4F0002BF0B /* GDataBaseExample.app */,
+				2B072FA51F5D9B4F0002BF0B /* GDataBaseExampleTests.xctest */,
+				2B072FB01F5D9B4F0002BF0B /* GDataBaseExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B1E27031F38172500D8006F /* GDataBaseExample */ = {
+		2B072F8E1F5D9B4F0002BF0B /* GDataBaseExample */ = {
 			isa = PBXGroup;
 			children = (
-				2B1E27071F38172500D8006F /* AppDelegate.h */,
-				2B1E27081F38172500D8006F /* AppDelegate.m */,
-				2B1E270A1F38172500D8006F /* ViewController.h */,
-				2B1E270B1F38172500D8006F /* ViewController.m */,
-				2B3295A41F381A6E003DCEB8 /* GAppsDataViewModel.h */,
-				2B3295A51F381A6E003DCEB8 /* GAppsDataViewModel.m */,
-				2B3295D21F387EAF003DCEB8 /* GTableA.h */,
-				2B3295D31F387EAF003DCEB8 /* GTableA.m */,
-				2B3295BA1F383414003DCEB8 /* GBlackListModel.h */,
-				2B3295BB1F383414003DCEB8 /* GBlackListModel.m */,
-				2B3295B71F38314C003DCEB8 /* SQLiteReserveModel.h */,
-				2B3295B81F38314C003DCEB8 /* SQLiteReserveModel.m */,
-				2B3295BD1F383833003DCEB8 /* GMutilKeyModel.h */,
-				2B3295BE1F383833003DCEB8 /* GMutilKeyModel.m */,
-				2B0136201F396D1500ABF460 /* GAutoPrimaryKeyModel.h */,
-				2B0136211F396D1500ABF460 /* GAutoPrimaryKeyModel.m */,
-				2B3295A91F381CEF003DCEB8 /* NSJSONSerialization+Utils.h */,
-				2B3295AA1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m */,
-				2BABCF261F3AF2FC009D0FFC /* model.json */,
-				2B1E270D1F38172500D8006F /* Main.storyboard */,
-				2B1E27101F38172500D8006F /* Assets.xcassets */,
-				2B1E27121F38172500D8006F /* LaunchScreen.storyboard */,
-				2B1E27151F38172500D8006F /* Info.plist */,
-				2B1E27041F38172500D8006F /* Supporting Files */,
+				2B072F921F5D9B4F0002BF0B /* AppDelegate.h */,
+				2B072F931F5D9B4F0002BF0B /* AppDelegate.m */,
+				2B072F951F5D9B4F0002BF0B /* ViewController.h */,
+				2B072F961F5D9B4F0002BF0B /* ViewController.m */,
+				2B072FCE1F5D9C8A0002BF0B /* GAppsDataViewModel.h */,
+				2B072FCF1F5D9C8A0002BF0B /* GAppsDataViewModel.m */,
+				2B072FD01F5D9C8A0002BF0B /* GAutoPrimaryKeyModel.h */,
+				2B072FD11F5D9C8A0002BF0B /* GAutoPrimaryKeyModel.m */,
+				2B072FD21F5D9C8A0002BF0B /* GBlackListModel.h */,
+				2B072FD31F5D9C8A0002BF0B /* GBlackListModel.m */,
+				2B072FD41F5D9C8A0002BF0B /* GMutilKeyModel.h */,
+				2B072FD51F5D9C8A0002BF0B /* GMutilKeyModel.m */,
+				2B072FD61F5D9C8A0002BF0B /* GTableA.h */,
+				2B072FD71F5D9C8A0002BF0B /* GTableA.m */,
+				2B072FDD1F5D9C990002BF0B /* model.json */,
+				2B072FDE1F5D9C990002BF0B /* NSJSONSerialization+Utils.h */,
+				2B072FDF1F5D9C990002BF0B /* NSJSONSerialization+Utils.m */,
+				2B072FE01F5D9C990002BF0B /* SQLiteReserveModel.h */,
+				2B072FE11F5D9C990002BF0B /* SQLiteReserveModel.m */,
+				2B072F981F5D9B4F0002BF0B /* Main.storyboard */,
+				2B072F9B1F5D9B4F0002BF0B /* Assets.xcassets */,
+				2B072F9D1F5D9B4F0002BF0B /* LaunchScreen.storyboard */,
+				2B072FA01F5D9B4F0002BF0B /* Info.plist */,
+				2B072F8F1F5D9B4F0002BF0B /* Supporting Files */,
 			);
 			path = GDataBaseExample;
 			sourceTree = "<group>";
 		};
-		2B1E27041F38172500D8006F /* Supporting Files */ = {
+		2B072F8F1F5D9B4F0002BF0B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2B1E27051F38172500D8006F /* main.m */,
+				2B072F901F5D9B4F0002BF0B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2B1E271D1F38172500D8006F /* GDataBaseExampleTests */ = {
+		2B072FA81F5D9B4F0002BF0B /* GDataBaseExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B1E271E1F38172500D8006F /* GDataBaseExampleTests.m */,
-				2B1E27201F38172500D8006F /* Info.plist */,
+				2B072FA91F5D9B4F0002BF0B /* GDataBaseExampleTests.m */,
+				2B072FAB1F5D9B4F0002BF0B /* Info.plist */,
 			);
 			path = GDataBaseExampleTests;
 			sourceTree = "<group>";
 		};
-		2B1E27281F38172500D8006F /* GDataBaseExampleUITests */ = {
+		2B072FB31F5D9B4F0002BF0B /* GDataBaseExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2B1E27291F38172500D8006F /* GDataBaseExampleUITests.m */,
-				2B1E272B1F38172500D8006F /* Info.plist */,
+				2B072FB41F5D9B4F0002BF0B /* GDataBaseExampleUITests.m */,
+				2B072FB61F5D9B4F0002BF0B /* Info.plist */,
 			);
 			path = GDataBaseExampleUITests;
 			sourceTree = "<group>";
 		};
-		2B1E275A1F38179300D8006F /* Frameworks */ = {
+		2B072FC21F5D9B670002BF0B /* GDataBase */ = {
 			isa = PBXGroup;
 			children = (
-				2B1E275D1F3817E700D8006F /* libsqlite3.0.tbd */,
-				2B1E275B1F38179300D8006F /* libsqlite3.tbd */,
-				0146B48559EC6365EBD4DDD0 /* libPods-GDataBaseExample.a */,
-				B8A10E127E0C208F43EC4999 /* libPods-GDataBaseExampleTests.a */,
-				A67CB92E07480F0A68E67EC8 /* libPods-GDataBaseExampleUITests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2BABCF281F3AF3DA009D0FFC /* GDataBase */ = {
-			isa = PBXGroup;
-			children = (
-				2BABCF2D1F3AF3DA009D0FFC /* GDataObjectProtocol.h */,
-				2BABCF291F3AF3DA009D0FFC /* GDataBase.h */,
-				2BABCF2A1F3AF3DA009D0FFC /* GDataBase.m */,
-				2BABCF2B1F3AF3DA009D0FFC /* GDataBaseUtils.h */,
-				2BABCF2C1F3AF3DA009D0FFC /* GDataBaseUtils.m */,
-				2BABCF2E1F3AF3DA009D0FFC /* GDBCore.h */,
-				2BABCF2F1F3AF3DA009D0FFC /* GDBCore.m */,
-				2BABCF301F3AF3DA009D0FFC /* GDBCoreInterface.h */,
+				2B072FC31F5D9B670002BF0B /* GDataBase.h */,
+				2B072FC41F5D9B670002BF0B /* GDataBase.m */,
+				2B072FC51F5D9B670002BF0B /* GDataBaseUtils.h */,
+				2B072FC61F5D9B670002BF0B /* GDataBaseUtils.m */,
+				2B072FC71F5D9B670002BF0B /* GDataObjectProtocol.h */,
+				2B072FC81F5D9B670002BF0B /* GDBCore.h */,
+				2B072FC91F5D9B670002BF0B /* GDBCore.m */,
+				2B072FCA1F5D9B670002BF0B /* GDBCoreInterface.h */,
 			);
 			path = GDataBase;
 			sourceTree = "<group>";
 		};
-		A81C913C651FC5CF5DBEAFA2 /* Pods */ = {
+		38F6E5CC2216F75206B27B8D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDB81C83A8BEB1B63457EC19 /* Pods-GDataBaseExample.debug.xcconfig */,
-				E29B20816C51658BF684E827 /* Pods-GDataBaseExample.release.xcconfig */,
-				14C5FBEA6B3AEBC4D6789E2E /* Pods-GDataBaseExampleTests.debug.xcconfig */,
-				2099B81D3C9238F62D1EDDA3 /* Pods-GDataBaseExampleTests.release.xcconfig */,
-				6F084B7AC6A8239B1C27B9EC /* Pods-GDataBaseExampleUITests.debug.xcconfig */,
-				57D15F781867BC213C7A2BBC /* Pods-GDataBaseExampleUITests.release.xcconfig */,
+				58A4012957001C9423EC571C /* Pods-GDataBaseExample.debug.xcconfig */,
+				E7579C4324749E2A8FF8CC37 /* Pods-GDataBaseExample.release.xcconfig */,
+				0BFFB1A66FEC94A4D31FC7DD /* Pods-GDataBaseExampleTests.debug.xcconfig */,
+				B468624567ED37F7BC4A604C /* Pods-GDataBaseExampleTests.release.xcconfig */,
+				2A70A4D004FAC13F56ECC321 /* Pods-GDataBaseExampleUITests.debug.xcconfig */,
+				226C12CC6251D5A04474D89B /* Pods-GDataBaseExampleUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9910E1C8DF82641C5923B82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C66DB7661C5BB2A6A325893 /* libPods-GDataBaseExample.a */,
+				3EF069136758E11870F26A5A /* libPods-GDataBaseExampleTests.a */,
+				EBD41921522E407A3EBA4C94 /* libPods-GDataBaseExampleUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B1E27001F38172500D8006F /* GDataBaseExample */ = {
+		2B072F8B1F5D9B4F0002BF0B /* GDataBaseExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B1E272E1F38172500D8006F /* Build configuration list for PBXNativeTarget "GDataBaseExample" */;
+			buildConfigurationList = 2B072FB91F5D9B4F0002BF0B /* Build configuration list for PBXNativeTarget "GDataBaseExample" */;
 			buildPhases = (
-				92A3888A1645490D14DA2CD0 /* [CP] Check Pods Manifest.lock */,
-				2B1E26FD1F38172500D8006F /* Sources */,
-				2B1E26FE1F38172500D8006F /* Frameworks */,
-				2B1E26FF1F38172500D8006F /* Resources */,
-				D676D1806D81DFBA15B07699 /* [CP] Embed Pods Frameworks */,
-				87DA457CE764FC3517375405 /* [CP] Copy Pods Resources */,
+				D69703A479CB99674C72E3FA /* [CP] Check Pods Manifest.lock */,
+				2B072F881F5D9B4F0002BF0B /* Sources */,
+				2B072F891F5D9B4F0002BF0B /* Frameworks */,
+				2B072F8A1F5D9B4F0002BF0B /* Resources */,
+				17AB07FB2B8EEB5C7F6B4EBC /* [CP] Embed Pods Frameworks */,
+				BE6C9063F678A8FACFB8BC33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,80 +265,79 @@
 			);
 			name = GDataBaseExample;
 			productName = GDataBaseExample;
-			productReference = 2B1E27011F38172500D8006F /* GDataBaseExample.app */;
+			productReference = 2B072F8C1F5D9B4F0002BF0B /* GDataBaseExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2B1E27191F38172500D8006F /* GDataBaseExampleTests */ = {
+		2B072FA41F5D9B4F0002BF0B /* GDataBaseExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B1E27311F38172500D8006F /* Build configuration list for PBXNativeTarget "GDataBaseExampleTests" */;
+			buildConfigurationList = 2B072FBC1F5D9B4F0002BF0B /* Build configuration list for PBXNativeTarget "GDataBaseExampleTests" */;
 			buildPhases = (
-				1347A8235EC5B2087C6AEAA7 /* [CP] Check Pods Manifest.lock */,
-				2B1E27161F38172500D8006F /* Sources */,
-				2B1E27171F38172500D8006F /* Frameworks */,
-				2B1E27181F38172500D8006F /* Resources */,
-				A02A2D2BFCA517056A09A6CE /* [CP] Embed Pods Frameworks */,
-				F51836B426F38CB3AAF4C2E0 /* [CP] Copy Pods Resources */,
+				CE95D210CF741F43D0500C55 /* [CP] Check Pods Manifest.lock */,
+				2B072FA11F5D9B4F0002BF0B /* Sources */,
+				2B072FA21F5D9B4F0002BF0B /* Frameworks */,
+				2B072FA31F5D9B4F0002BF0B /* Resources */,
+				2DDA830BFF4804AC270B1A68 /* [CP] Embed Pods Frameworks */,
+				8A2212374270B5E4315D7C43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2B1E271C1F38172500D8006F /* PBXTargetDependency */,
+				2B072FA71F5D9B4F0002BF0B /* PBXTargetDependency */,
 			);
 			name = GDataBaseExampleTests;
 			productName = GDataBaseExampleTests;
-			productReference = 2B1E271A1F38172500D8006F /* GDataBaseExampleTests.xctest */;
+			productReference = 2B072FA51F5D9B4F0002BF0B /* GDataBaseExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2B1E27241F38172500D8006F /* GDataBaseExampleUITests */ = {
+		2B072FAF1F5D9B4F0002BF0B /* GDataBaseExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B1E27341F38172500D8006F /* Build configuration list for PBXNativeTarget "GDataBaseExampleUITests" */;
+			buildConfigurationList = 2B072FBF1F5D9B4F0002BF0B /* Build configuration list for PBXNativeTarget "GDataBaseExampleUITests" */;
 			buildPhases = (
-				A576F81B4375EA021DD7C84D /* [CP] Check Pods Manifest.lock */,
-				2B1E27211F38172500D8006F /* Sources */,
-				2B1E27221F38172500D8006F /* Frameworks */,
-				2B1E27231F38172500D8006F /* Resources */,
-				AD55443D150CE25BE38AB49E /* [CP] Embed Pods Frameworks */,
-				FCCC5A094C6F9147728CDD64 /* [CP] Copy Pods Resources */,
+				2AF48F79EB04A5571D80FFE0 /* [CP] Check Pods Manifest.lock */,
+				2B072FAC1F5D9B4F0002BF0B /* Sources */,
+				2B072FAD1F5D9B4F0002BF0B /* Frameworks */,
+				2B072FAE1F5D9B4F0002BF0B /* Resources */,
+				434927A52C10186CB4FA5B36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2B1E27271F38172500D8006F /* PBXTargetDependency */,
+				2B072FB21F5D9B4F0002BF0B /* PBXTargetDependency */,
 			);
 			name = GDataBaseExampleUITests;
 			productName = GDataBaseExampleUITests;
-			productReference = 2B1E27251F38172500D8006F /* GDataBaseExampleUITests.xctest */;
+			productReference = 2B072FB01F5D9B4F0002BF0B /* GDataBaseExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2B1E26F91F38172500D8006F /* Project object */ = {
+		2B072F841F5D9B4F0002BF0B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = GIKI;
 				TargetAttributes = {
-					2B1E27001F38172500D8006F = {
-						CreatedOnToolsVersion = 8.3.2;
+					2B072F8B1F5D9B4F0002BF0B = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RCF9CM736N;
 						ProvisioningStyle = Automatic;
 					};
-					2B1E27191F38172500D8006F = {
-						CreatedOnToolsVersion = 8.3.2;
+					2B072FA41F5D9B4F0002BF0B = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RCF9CM736N;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 2B1E27001F38172500D8006F;
+						TestTargetID = 2B072F8B1F5D9B4F0002BF0B;
 					};
-					2B1E27241F38172500D8006F = {
-						CreatedOnToolsVersion = 8.3.2;
+					2B072FAF1F5D9B4F0002BF0B = {
+						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RCF9CM736N;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 2B1E27001F38172500D8006F;
+						TestTargetID = 2B072F8B1F5D9B4F0002BF0B;
 					};
 				};
 			};
-			buildConfigurationList = 2B1E26FC1F38172500D8006F /* Build configuration list for PBXProject "GDataBaseExample" */;
+			buildConfigurationList = 2B072F871F5D9B4F0002BF0B /* Build configuration list for PBXProject "GDataBaseExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -354,38 +345,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 2B1E26F81F38172500D8006F;
-			productRefGroup = 2B1E27021F38172500D8006F /* Products */;
+			mainGroup = 2B072F831F5D9B4F0002BF0B;
+			productRefGroup = 2B072F8D1F5D9B4F0002BF0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B1E27001F38172500D8006F /* GDataBaseExample */,
-				2B1E27191F38172500D8006F /* GDataBaseExampleTests */,
-				2B1E27241F38172500D8006F /* GDataBaseExampleUITests */,
+				2B072F8B1F5D9B4F0002BF0B /* GDataBaseExample */,
+				2B072FA41F5D9B4F0002BF0B /* GDataBaseExampleTests */,
+				2B072FAF1F5D9B4F0002BF0B /* GDataBaseExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2B1E26FF1F38172500D8006F /* Resources */ = {
+		2B072F8A1F5D9B4F0002BF0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BABCF271F3AF2FC009D0FFC /* model.json in Resources */,
-				2B1E27141F38172500D8006F /* LaunchScreen.storyboard in Resources */,
-				2B1E27111F38172500D8006F /* Assets.xcassets in Resources */,
-				2B1E270F1F38172500D8006F /* Main.storyboard in Resources */,
+				2B072F9F1F5D9B4F0002BF0B /* LaunchScreen.storyboard in Resources */,
+				2B072F9C1F5D9B4F0002BF0B /* Assets.xcassets in Resources */,
+				2B072F9A1F5D9B4F0002BF0B /* Main.storyboard in Resources */,
+				2B072FE21F5D9C990002BF0B /* model.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B1E27181F38172500D8006F /* Resources */ = {
+		2B072FA31F5D9B4F0002BF0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B1E27231F38172500D8006F /* Resources */ = {
+		2B072FAE1F5D9B4F0002BF0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,97 +386,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1347A8235EC5B2087C6AEAA7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		87DA457CE764FC3517375405 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExample/Pods-GDataBaseExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		92A3888A1645490D14DA2CD0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A02A2D2BFCA517056A09A6CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExampleTests/Pods-GDataBaseExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A576F81B4375EA021DD7C84D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AD55443D150CE25BE38AB49E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExampleUITests/Pods-GDataBaseExampleUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D676D1806D81DFBA15B07699 /* [CP] Embed Pods Frameworks */ = {
+		17AB07FB2B8EEB5C7F6B4EBC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -500,22 +401,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExample/Pods-GDataBaseExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F51836B426F38CB3AAF4C2E0 /* [CP] Copy Pods Resources */ = {
+		2AF48F79EB04A5571D80FFE0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExampleTests/Pods-GDataBaseExampleTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FCCC5A094C6F9147728CDD64 /* [CP] Copy Pods Resources */ = {
+		2DDA830BFF4804AC270B1A68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExampleTests/Pods-GDataBaseExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		434927A52C10186CB4FA5B36 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -530,73 +446,133 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExampleUITests/Pods-GDataBaseExampleUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8A2212374270B5E4315D7C43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExampleTests/Pods-GDataBaseExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE6C9063F678A8FACFB8BC33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDataBaseExample/Pods-GDataBaseExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE95D210CF741F43D0500C55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D69703A479CB99674C72E3FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B1E26FD1F38172500D8006F /* Sources */ = {
+		2B072F881F5D9B4F0002BF0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BABCF321F3AF3DA009D0FFC /* GDataBaseUtils.m in Sources */,
-				2B1E270C1F38172500D8006F /* ViewController.m in Sources */,
-				2BABCF311F3AF3DA009D0FFC /* GDataBase.m in Sources */,
-				2B1E27091F38172500D8006F /* AppDelegate.m in Sources */,
-				2B3295D41F387EAF003DCEB8 /* GTableA.m in Sources */,
-				2B0136221F396D1500ABF460 /* GAutoPrimaryKeyModel.m in Sources */,
-				2B3295A61F381A6E003DCEB8 /* GAppsDataViewModel.m in Sources */,
-				2B3295AB1F381CEF003DCEB8 /* NSJSONSerialization+Utils.m in Sources */,
-				2BABCF331F3AF3DA009D0FFC /* GDBCore.m in Sources */,
-				2B3295BC1F383414003DCEB8 /* GBlackListModel.m in Sources */,
-				2B3295BF1F383833003DCEB8 /* GMutilKeyModel.m in Sources */,
-				2B1E27061F38172500D8006F /* main.m in Sources */,
-				2B3295B91F38314C003DCEB8 /* SQLiteReserveModel.m in Sources */,
+				2B072FDA1F5D9C8A0002BF0B /* GBlackListModel.m in Sources */,
+				2B072FD81F5D9C8A0002BF0B /* GAppsDataViewModel.m in Sources */,
+				2B072FCD1F5D9B670002BF0B /* GDBCore.m in Sources */,
+				2B072FE41F5D9C990002BF0B /* SQLiteReserveModel.m in Sources */,
+				2B072F971F5D9B4F0002BF0B /* ViewController.m in Sources */,
+				2B072F941F5D9B4F0002BF0B /* AppDelegate.m in Sources */,
+				2B072FDC1F5D9C8A0002BF0B /* GTableA.m in Sources */,
+				2B072FCB1F5D9B670002BF0B /* GDataBase.m in Sources */,
+				2B072FE31F5D9C990002BF0B /* NSJSONSerialization+Utils.m in Sources */,
+				2B072FCC1F5D9B670002BF0B /* GDataBaseUtils.m in Sources */,
+				2B072F911F5D9B4F0002BF0B /* main.m in Sources */,
+				2B072FD91F5D9C8A0002BF0B /* GAutoPrimaryKeyModel.m in Sources */,
+				2B072FDB1F5D9C8A0002BF0B /* GMutilKeyModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B1E27161F38172500D8006F /* Sources */ = {
+		2B072FA11F5D9B4F0002BF0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1E271F1F38172500D8006F /* GDataBaseExampleTests.m in Sources */,
+				2B072FAA1F5D9B4F0002BF0B /* GDataBaseExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B1E27211F38172500D8006F /* Sources */ = {
+		2B072FAC1F5D9B4F0002BF0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1E272A1F38172500D8006F /* GDataBaseExampleUITests.m in Sources */,
+				2B072FB51F5D9B4F0002BF0B /* GDataBaseExampleUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B1E271C1F38172500D8006F /* PBXTargetDependency */ = {
+		2B072FA71F5D9B4F0002BF0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2B1E27001F38172500D8006F /* GDataBaseExample */;
-			targetProxy = 2B1E271B1F38172500D8006F /* PBXContainerItemProxy */;
+			target = 2B072F8B1F5D9B4F0002BF0B /* GDataBaseExample */;
+			targetProxy = 2B072FA61F5D9B4F0002BF0B /* PBXContainerItemProxy */;
 		};
-		2B1E27271F38172500D8006F /* PBXTargetDependency */ = {
+		2B072FB21F5D9B4F0002BF0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2B1E27001F38172500D8006F /* GDataBaseExample */;
-			targetProxy = 2B1E27261F38172500D8006F /* PBXContainerItemProxy */;
+			target = 2B072F8B1F5D9B4F0002BF0B /* GDataBaseExample */;
+			targetProxy = 2B072FB11F5D9B4F0002BF0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B1E270D1F38172500D8006F /* Main.storyboard */ = {
+		2B072F981F5D9B4F0002BF0B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2B1E270E1F38172500D8006F /* Base */,
+				2B072F991F5D9B4F0002BF0B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2B1E27121F38172500D8006F /* LaunchScreen.storyboard */ = {
+		2B072F9D1F5D9B4F0002BF0B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2B1E27131F38172500D8006F /* Base */,
+				2B072F9E1F5D9B4F0002BF0B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -604,12 +580,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2B1E272C1F38172500D8006F /* Debug */ = {
+		2B072FB71F5D9B4F0002BF0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -645,20 +620,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2B1E272D1F38172500D8006F /* Release */ = {
+		2B072FB81F5D9B4F0002BF0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -688,89 +661,88 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2B1E272F1F38172500D8006F /* Debug */ = {
+		2B072FBA1F5D9B4F0002BF0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDB81C83A8BEB1B63457EC19 /* Pods-GDataBaseExample.debug.xcconfig */;
+			baseConfigurationReference = 58A4012957001C9423EC571C /* Pods-GDataBaseExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RCF9CM736N;
 				INFOPLIST_FILE = GDataBaseExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GIKI.GDataBaseExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GIKI.www.GDataBaseExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		2B1E27301F38172500D8006F /* Release */ = {
+		2B072FBB1F5D9B4F0002BF0B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E29B20816C51658BF684E827 /* Pods-GDataBaseExample.release.xcconfig */;
+			baseConfigurationReference = E7579C4324749E2A8FF8CC37 /* Pods-GDataBaseExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RCF9CM736N;
 				INFOPLIST_FILE = GDataBaseExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GIKI.GDataBaseExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GIKI.www.GDataBaseExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		2B1E27321F38172500D8006F /* Debug */ = {
+		2B072FBD1F5D9B4F0002BF0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14C5FBEA6B3AEBC4D6789E2E /* Pods-GDataBaseExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 0BFFB1A66FEC94A4D31FC7DD /* Pods-GDataBaseExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = RCF9CM736N;
 				INFOPLIST_FILE = GDataBaseExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GIKI.GDataBaseExampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GIKI.www.GDataBaseExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDataBaseExample.app/GDataBaseExample";
 			};
 			name = Debug;
 		};
-		2B1E27331F38172500D8006F /* Release */ = {
+		2B072FBE1F5D9B4F0002BF0B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2099B81D3C9238F62D1EDDA3 /* Pods-GDataBaseExampleTests.release.xcconfig */;
+			baseConfigurationReference = B468624567ED37F7BC4A604C /* Pods-GDataBaseExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = RCF9CM736N;
 				INFOPLIST_FILE = GDataBaseExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GIKI.GDataBaseExampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GIKI.www.GDataBaseExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDataBaseExample.app/GDataBaseExample";
 			};
 			name = Release;
 		};
-		2B1E27351F38172500D8006F /* Debug */ = {
+		2B072FC01F5D9B4F0002BF0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F084B7AC6A8239B1C27B9EC /* Pods-GDataBaseExampleUITests.debug.xcconfig */;
+			baseConfigurationReference = 2A70A4D004FAC13F56ECC321 /* Pods-GDataBaseExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = RCF9CM736N;
 				INFOPLIST_FILE = GDataBaseExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GIKI.GDataBaseExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GIKI.www.GDataBaseExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = GDataBaseExample;
 			};
 			name = Debug;
 		};
-		2B1E27361F38172500D8006F /* Release */ = {
+		2B072FC11F5D9B4F0002BF0B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57D15F781867BC213C7A2BBC /* Pods-GDataBaseExampleUITests.release.xcconfig */;
+			baseConfigurationReference = 226C12CC6251D5A04474D89B /* Pods-GDataBaseExampleUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = RCF9CM736N;
 				INFOPLIST_FILE = GDataBaseExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GIKI.GDataBaseExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GIKI.www.GDataBaseExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = GDataBaseExample;
 			};
@@ -779,43 +751,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B1E26FC1F38172500D8006F /* Build configuration list for PBXProject "GDataBaseExample" */ = {
+		2B072F871F5D9B4F0002BF0B /* Build configuration list for PBXProject "GDataBaseExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B1E272C1F38172500D8006F /* Debug */,
-				2B1E272D1F38172500D8006F /* Release */,
+				2B072FB71F5D9B4F0002BF0B /* Debug */,
+				2B072FB81F5D9B4F0002BF0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B1E272E1F38172500D8006F /* Build configuration list for PBXNativeTarget "GDataBaseExample" */ = {
+		2B072FB91F5D9B4F0002BF0B /* Build configuration list for PBXNativeTarget "GDataBaseExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B1E272F1F38172500D8006F /* Debug */,
-				2B1E27301F38172500D8006F /* Release */,
+				2B072FBA1F5D9B4F0002BF0B /* Debug */,
+				2B072FBB1F5D9B4F0002BF0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B1E27311F38172500D8006F /* Build configuration list for PBXNativeTarget "GDataBaseExampleTests" */ = {
+		2B072FBC1F5D9B4F0002BF0B /* Build configuration list for PBXNativeTarget "GDataBaseExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B1E27321F38172500D8006F /* Debug */,
-				2B1E27331F38172500D8006F /* Release */,
+				2B072FBD1F5D9B4F0002BF0B /* Debug */,
+				2B072FBE1F5D9B4F0002BF0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B1E27341F38172500D8006F /* Build configuration list for PBXNativeTarget "GDataBaseExampleUITests" */ = {
+		2B072FBF1F5D9B4F0002BF0B /* Build configuration list for PBXNativeTarget "GDataBaseExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B1E27351F38172500D8006F /* Debug */,
-				2B1E27361F38172500D8006F /* Release */,
+				2B072FC01F5D9B4F0002BF0B /* Debug */,
+				2B072FC11F5D9B4F0002BF0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2B1E26F91F38172500D8006F /* Project object */;
+	rootObject = 2B072F841F5D9B4F0002BF0B /* Project object */;
 }
