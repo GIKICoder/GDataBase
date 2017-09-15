@@ -156,205 +156,132 @@ static const short GDecodingTable[256] = {
 {
     return  @{
               @"ABORT"  : @"ABORT" ,
-              
               @"ACTION": @"ACTION" ,
-              
               @"ADD":  @"ADD" ,
-              
               @"AFTER":  @"AFTER",
-              
               @"ALL":  @"ALL",
-              
               @"ALTER": @"ALTER" ,
-              
               @"ANALYZE": @"ANALYZE" ,
-              
               @"AND":  @"AND" ,
-              
               @"AS":@"AS"  ,
-              
               @"ASC":@"ASC"  ,
-              
               @"ATTACH":@"ATTACH"  ,
-              
               @"AUTOINCREMENT":@"AUTOINCREMENT"  ,
-              
               @"BEFORE": @"BEFORE" ,
-              
               @"BEGIN":  @"BEGIN",
-              
               @"BETWEEN":@"BETWEEN"  ,
-              
               @"BY": @"BY" ,
-              
               @"CASCADE":@"CASCADE"  ,
-              
               @"CASE":  @"RESPONSE",
-              
               @"CAST":  @"RESPONSE" ,
-              
               @"CHECK":  @"RESPONSE" ,
-              
               @"COLLATE":  @"RESPONSE" ,
-              
               @"COLUMN":   @"RESPONSE",
-              
               @"COMMIT":  @"RESPONSE" ,
-              
               @"CONFLICT":  @"RESPONSE" ,
-              
               @"CONSTRAINT": @"RESPONSE"  ,
-              
               @"CREATE":   @"RESPONSE",
-              
               @"CROSS":   @"RESPONSE",
-              
               @"CURRENT_DATE":  @"RESPONSE" ,
-              
               @"CURRENT_TIME": @"RESPONSE"  ,
-              
               @"CURRENT_TIMESTAMP":  @"RESPONSE" ,
-              
               @"DATABASE":   @"RESPONSE",
-              
               @"DEFAULT":   @"RESPONSE",
-              
               @"DEFERRABLE":  @"RESPONSE" ,
-              
               @"DEFERRED":  @"RESPONSE" ,
-              
               @"DELETE":   @"RESPONSE",
-              
               @"DESC":  @"RESPONSE" ,
-              
               @"DETACH":  @"RESPONSE" ,
-              
               @"DISTINCT":  @"RESPONSE" ,
-              
               @"DROP":   @"RESPONSE",
-              
               @"EACH":   @"RESPONSE",
-              
               @"ELSE":   @"RESPONSE",
-              
               @"END":   @"RESPONSE",
-              
               @"ESCAPE":  @"RESPONSE" ,
-              
               @"EXCEPT":   @"RESPONSE",
-              
               @"EXCLUSIVE":  @"RESPONSE" ,
-              
               @"EXISTS":  @"RESPONSE" ,
-              
               @"EXPLAIN":  @"RESPONSE" ,
-              
               @"FAIL":  @"RESPONSE" ,
-              
               @"FOR":   @"RESPONSE",
-              
               @"FOREIGN":   @"RESPONSE",
-              
               @"FROM":  @"RESPONSE" ,
-              
               @"FULL":  @"RESPONSE" ,
-              
               @"GLOB":  @"RESPONSE" ,
-              
               @"GROUP":  @"RESPONSE" ,
-              
               @"HAVING":  @"RESPONSE" ,
-              
               @"IF":  @"RESPONSE" ,
-              
               @"IGNORE":   @"RESPONSE",
-              
               @"IMMEDIATE": @"RESPONSE"  ,
-              
               @"IN":  @"RESPONSE" ,
-              
               @"INDEX":  @"RESPONSE" ,
-              
               @"INDEXED":  @"RESPONSE" ,
-              
               @"INITIALLY":  @"RESPONSE" ,
-              
               @"INNER":  @"RESPONSE" ,
-              
               @"INSERT":  @"RESPONSE" ,
-              
               @"INSTEAD": @"RESPONSE"  ,
-              
               @"INTERSECT":  @"RESPONSE" ,
-              
               @"INTO":  @"RESPONSE" ,
-              
               @"IS":   @"RESPONSE",
-              
               @"ISNULL":  @"RESPONSE" ,
-              
               @"JOIN":  @"RESPONSE" ,
-              
               @"KEY": @"RESPONSE"  ,
-              
               @"LEFT":  @"RESPONSE" ,
-              
               @"LIKE": @"RESPONSE"  ,
-              
               @"LIMIT":  @"RESPONSE" ,
-              
               @"MATCH":  @"RESPONSE" ,
-              
               @"NATURAL": @"RESPONSE"  ,
-              
               @"NO":  @"RESPONSE" ,
-              
               @"NOT":  @"RESPONSE" ,
-              
-              @"NOTNULL":  @"RESPONSE" ,
-              
+              @"NOTNULL":  @"RESPONSE" ,              
               @"NULL":  @"RESPONSE" ,
-              
               @"OF":  @"RESPONSE" ,
-              
-              @"OFFSET":  @"RESPONSE" ,
-              
+              @"OFFSET":  @"RESPONSE" ,              
               @"ON": @"RESPONSE"  ,
-              
               @"OR":   @"RESPONSE",
-              
               @"ORDER":  @"RESPONSE" ,
-              
               @"OUTER":  @"RESPONSE" ,
-              
               @"PLAN":  @"RESPONSE" ,
-              
               @"PRAGMA": @"RESPONSE"  ,
-              
               @"PRIMARY":  @"RESPONSE" ,
-              
               @"QUERY":  @"RESPONSE" ,
-              
               @"RAISE":  @"RESPONSE" ,
-              
               @"RECURSIVE": @"RESPONSE"  ,
-              
               @"REFERENCES":  @"RESPONSE" ,
-              
               @"REGEXP":  @"RESPONSE" ,
-              
               @"REINDEX":  @"RESPONSE" ,
-              
               @"RELEASE": @"RESPONSE"  ,
-              
               @"RENAME": @"RESPONSE"  ,
-              
               @"REPLACE":   @"RESPONSE",
-              
               @"RESTRICT":  @"RESPONSE" ,
-              
               @"RIGHT":  @"RESPONSE" ,
+              @"TO" : @"RESPONSE",
+              @"ROLLBACK" : @"RESPONSE",
+              @"SAVEPOINT" : @"RESPONSE",
+              @"SELECT" : @"RESPONSE",
+              @"SET" : @"RESPONSE",
+              @"TABLE" : @"RESPONSE",
+              @"TEMP" : @"RESPONSE",
+              @"TEMPORARY" : @"RESPONSE",
+              @"THEN" : @"RESPONSE",
+              @"TRANSACTION" : @"RESPONSE",
+              @"TRIGGER" : @"RESPONSE",
+              @"UNION" : @"RESPONSE",
+              @"UNIQUE" : @"RESPONSE",
+              @"UPDATE" : @"RESPONSE",
+              @"USING" : @"RESPONSE",
+              @"VACUUM" : @"RESPONSE",
+              @"VALUES" : @"RESPONSE",
+              @"VIEW" : @"RESPONSE",
+              @"VIRTUAL" : @"RESPONSE",
+              @"WHEN" : @"RESPONSE",
+              @"WHERE" : @"RESPONSE",
+              @"WITH" : @"RESPONSE",
+              @"WITHOU" : @"RESPONSE",
               
               };
 }
+
+
+
 @end
