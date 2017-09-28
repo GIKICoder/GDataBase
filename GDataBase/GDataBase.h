@@ -16,11 +16,11 @@
  构造方法
 
  @param dbPath 如果没有文件会默认创建xx.db 文件
-        isEncrypt 是否开启base64加密字符串,default不开启
+        isEncrypt 是否开启对字符串进行base64编码,default不开启
  @return GDataBase实例
  */
 + (instancetype)databaseWithPath:(NSString *)dbPath;
-+ (instancetype)databaseWithPath:(NSString *)dbPath isEncrypt:(BOOL)isEncrypt;
++ (instancetype)databaseWithPath:(NSString *)dbPath isBase64Encode:(BOOL)isEncode;
 
 /**
  往数据库中增加一条数据<不开启事务>

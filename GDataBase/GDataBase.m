@@ -21,13 +21,13 @@
 
 + (instancetype)databaseWithPath:(NSString *)dbPath
 {
-    return [GDataBase databaseWithPath:dbPath isEncrypt:NO];
+    return [GDataBase databaseWithPath:dbPath isBase64Encode:NO];
 }
 
-+ (instancetype)databaseWithPath:(NSString *)dbPath isEncrypt:(BOOL)isEncrypt
++ (instancetype)databaseWithPath:(NSString *)dbPath isBase64Encode:(BOOL)isEncode
 {
     GDataBase *database = [[GDataBase alloc] initWithDBPath:dbPath];
-    database.isEncrypt = isEncrypt;
+    database.isEncode = isEncode;
     return database;
 }
 

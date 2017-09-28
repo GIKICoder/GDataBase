@@ -713,7 +713,7 @@
         
     }];
     
-    if (!_isEncrypt) {
+    if (!_isEncode) {
         return formatString;
     }
     
@@ -754,7 +754,7 @@
 
 - (NSString *)base64Str:(NSString*)str
 {
-    if (_isEncrypt) {
+    if (_isEncode) {
         return [GDataBaseUtils base64EncodedString:str];
     }
     return str;
@@ -772,7 +772,7 @@
 
 - (NSString *)base64EncodedString:(NSString *)base64Str
 {
-    if (_isEncrypt) {
+    if (_isEncode) {
         return [GDataBaseUtils base64DecodedString:base64Str];
     }
     return base64Str;

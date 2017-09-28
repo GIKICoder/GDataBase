@@ -14,8 +14,8 @@
 @property (nonatomic, strong, readonly) FMDatabase * dataBase;
 @property (nonatomic, copy  ) NSString * dbFile;
 @property (nonatomic, strong) FMDatabaseQueue * dbQueue;
-/// 是否开启base64加密,默认不开启
-@property (nonatomic, assign) BOOL  isEncrypt;
+/// 是否开启base64编码,默认不开启
+@property (nonatomic, assign) BOOL  isEncode;
 @property (nonatomic, strong) NSDictionary * sqliteReservedWordMap;
 
 - (instancetype)initWithDBPath:(NSString*)dbPath;
