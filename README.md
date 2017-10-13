@@ -7,7 +7,7 @@ GDataBase
 
 Features
 ==============
-- 对于FMDB基于ORM的简单封装.方便项目中使用.
+- 对于FMDB基于ORM的封装.方便项目中使用.
 - 所有API基于FMDBQueue,保证线程安全.
 - 由于ORM字符串拼接,执行效率会有损耗.
 - 支持sqlite 保留字作为字段插入. 无需考虑模型属性命名.
