@@ -15,7 +15,7 @@
  
  @return NSDictionary
  */
-+ (NSDictionary *)getSQLiteReservedWord;
++ (NSDictionary *)getSQLiteReservedWords;
 
 /**
  base64 加密

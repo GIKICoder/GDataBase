@@ -21,7 +21,7 @@
 {
     if (self = [super init]) {
         self.dbFile = dbPath;
-        self.sqliteReservedWordMap = [GDataBaseUtils getSQLiteReservedWord];
+        self.sqliteReservedWords = [GDataBaseUtils getSQLiteReservedWords];
         [self connect];
         self.dbQueue = [[FMDatabaseQueue alloc] initWithPath:dbPath];
         
@@ -781,7 +781,7 @@
 - (NSString*)processReservedWord:(NSString*)property_key
 {
     NSString *str = property_key;
-    if ([self.sqliteReservedWordMap objectForKey:[str uppercaseString]]) {
+    if ([self.sqliteReservedWords containsObject:[str uppercaseString]]) {
         str = [NSString stringWithFormat:@"[%@]",property_key];
     }
     return str;
@@ -790,7 +790,7 @@
 - (NSString*)DeProcessReservedWord:(NSString*)property_key
 {
     NSString *str = property_key;
-    if ([self.sqliteReservedWordMap objectForKey:[str uppercaseString]]) {
+    if ([self.sqliteReservedWords containsObject:[str uppercaseString]]) {
         if ([str hasPrefix:@"["] && [str hasSuffix:@"]"]) {
             str = [str stringByReplacingOccurrencesOfString:@"[" withString:@""];
             str = [str stringByReplacingOccurrencesOfString:@"]" withString:@""];
