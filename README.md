@@ -32,13 +32,13 @@ Usage
 ```
 
 ### DB创建
-```
+```objc
 NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 path = [path stringByAppendingString:@"GDATA.db"];    
 self.database = [GDataBase databaseWithPath:path];
 ```
 ### ORM模型
-```
+```objc
 @interface GAppsDataViewModel : NSObject<GDataObjectProtocol>
 @property (nonatomic, strong) NSString  *dataID;
 @property (nonatomic, copy) NSString  *fields;
@@ -105,12 +105,12 @@ return @{
 
 ### 模型存储
 
-```
+```objc
 - (BOOL)addObject:(id)model;
 会自动处理数据表建立,以及字段升级等问题. 无需单独创建数据表
 ```
 
-```
+```objc
 /// 单条
 - (void)insertOneRowData
 {
@@ -140,7 +140,7 @@ BOOL isSucess =   [weakSelf.database addObjectsInTransaction:weakSelf.models Wit
 ```
 
 ### 模型读取
-```
+```objc
 /// 获取GAppsDataViewModel全部数据
 - (void)getAllData
 {
@@ -173,7 +173,7 @@ queryObjectsWithClazz:[GAppsDataViewModel class]];
 ```
 ### 模型更新
 
-```
+```objc
 ///字段更新
 - (void)updateSqlData
 {
@@ -200,7 +200,7 @@ dataModel.dataIndex = 12;
 
 ```
 ### 删除操作
-```
+```objc
 - (void)deleteObject
 {
 NSArray * datas = [self.database getAllObjectsWithClass:[GAutoPrimaryKeyModel class]];
@@ -217,7 +217,7 @@ BOOL isSucess = [self.database deleteObject:[datas firstObject]];
 
 
 ### 数据表count查询
-```
+```objc
 - (void)querySqlTableCount
 {
 long count = [self.database countInDataBaseWithClass:[GAppsDataViewModel class] withTableName:nil cond:nil];
