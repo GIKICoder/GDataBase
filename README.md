@@ -59,34 +59,35 @@ GDATABASE_IMPLEMENTATION_INJECT(GAppsDataViewModel)
 /// 如不实现此方法. 数据表默认为自增主键 'GAUTOPRIMARYKEY' 
 - (NSArray<NSString *> *)g_GetCustomPrimarykey
 {
-return @[@"dataID"];//单一主键
+  return @[@"dataID"];//单一主键
 // return @[@"dataID",@"dataGroup"]; // 多主键
 }
 
 /// 如实现此方法. 所有key 值均不会参与数据库存储
 - (NSDictionary<NSString *,NSString *> *)g_blackList
 {
-return @{
-@"fields" :@"fields",             };
+  return @{
+            @"fields" :@"fields",   
+            };
 }
 
 /// 自定义归档属性
 - (id)g_ArchiveProperty:(NSString*)property_name
 {
-if ([property_name isEqualToString:@"datas"]) {
-NSData *data = [self.datas yy_modelToJSONData];
-return data;
-}
-return nil;
+    if ([property_name isEqualToString:@"datas"]) {
+    NSData *data = [self.datas yy_modelToJSONData];
+    return data;
+    }
+    return nil;
 }
 
 /// 自定义接档属性
 - (void)g_UnarchiveSetData:(id)data property:(NSString*)property_name
 {
-if ([property_name isEqualToString:@"datas"]) {
-NSError *eror = nil;
-NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&eror];
-self.datas = [NSArray yy_modelArrayWithClass:[GSubModel class] json:array];
+    if ([property_name isEqualToString:@"datas"]) {
+    NSError *eror = nil;
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&eror];
+    self.datas = [NSArray yy_modelArrayWithClass:[GSubModel class] json:array];
 }
 
 }
@@ -94,9 +95,9 @@ self.datas = [NSArray yy_modelArrayWithClass:[GSubModel class] json:array];
 /// 如需要自定义归解档的属性名称以及需要归档的sqlite 字段类型,实现此方法
 + (NSDictionary<NSString *,NSString*> *)g_customArchiveList
 {
-return @{
-@"datas" : GBLOB_TYPE,
-};
+    return @{
+        @"datas" : GBLOB_TYPE,
+        };
 }
 
 
@@ -114,27 +115,27 @@ return @{
 /// 单条
 - (void)insertOneRowData
 {
-GAppsDataViewModel * model = [[GAppsDataViewModel alloc] init];
-model.dataID = @"WOSHI_dataID";
-model.fields = @"1234567";
-model.dataGroup = 12;
-model.index = 12;
-BOOL isSucess = [self.database addObject:model];
+  GAppsDataViewModel * model = [[GAppsDataViewModel alloc] init];
+  model.dataID = @"WOSHI_dataID";
+  model.fields = @"1234567";
+  model.dataGroup = 12;
+  model.index = 12;
+  BOOL isSucess = [self.database addObject:model];
 }
 
 /// 多条插入
 - (void)insertLargeDataNOInTransaction
 {
-BOOL isSucess =   [self.database addObjects:self.models WithTableName:nil];
+  BOOL isSucess =   [self.database addObjects:self.models WithTableName:nil];
 }
 
 /// 开启事务_异步线程插入
 - (void)insertLargeData
 {
-__weak typeof(self) weakSelf = self;
-dispatch_async(dispatch_get_global_queue(0, 0), ^{
-BOOL isSucess =   [weakSelf.database addObjectsInTransaction:weakSelf.models WithTableName:nil];
-});
+  __weak typeof(self) weakSelf = self;
+  dispatch_async(dispatch_get_global_queue(0, 0), ^{
+  BOOL isSucess =   [weakSelf.database addObjectsInTransaction:weakSelf.models WithTableName:nil];
+  });
 }
 
 ```
@@ -144,25 +145,25 @@ BOOL isSucess =   [weakSelf.database addObjectsInTransaction:weakSelf.models Wit
 /// 获取GAppsDataViewModel全部数据
 - (void)getAllData
 {
-NSArray * all = [self.database getAllObjectsWithClass:[GAppsDataViewModel class]];
+    NSArray * all = [self.database getAllObjectsWithClass:[GAppsDataViewModel class]];
 }
 
 /// 根据条件获取数据
 - (void)querySqlData
 {
-NSArray *Datas = [self.database getObjectsWithClass:[GAppsDataViewModel class] withTableName:@"GAppsDataViewModel"  whereCond:@"dataID= '%@' AND dataGroup=%d",@"WOSHI_dataID",12];
+    NSArray *Datas = [self.database getObjectsWithClass:[GAppsDataViewModel class] withTableName:@"GAppsDataViewModel"      whereCond:@"dataID= '%@' AND dataGroup=%d",@"WOSHI_dataID",12];
 }
 - (void)queryOrderbylimit
 {
-NSString *str = @"str";
-NSArray *datas = [self.database getObjectsWithClass:[GAppsDataViewModel class] withTableName:nil orderBy:@"dataID" limit:10 cond:@"dataID='%@' and dataGroup='%@'",str,str];
+    NSString *str = @"str";
+    NSArray *datas = [self.database getObjectsWithClass:[GAppsDataViewModel class] withTableName:nil orderBy:@"dataID" limit:10 cond:@"dataID='%@' and dataGroup='%@'",str,str];
 
 }
 
 - (void)querySelectSqlData
 {
 
-NSArray *  array = [[[[[[self.database selectClazz:[GAppsDataViewModel class]]
+    NSArray *  array = [[[[[[self.database selectClazz:[GAppsDataViewModel class]]
 whereProperty:@"dataID"] equal:@"WOSHI_dataID"]
 orderby:@"dataID" asc:YES]
 limit:10]
@@ -177,25 +178,25 @@ queryObjectsWithClazz:[GAppsDataViewModel class]];
 ///字段更新
 - (void)updateSqlData
 {
-BOOL isSucess = [self.database updateObjectClazz:[GAppsDataViewModel class] keyValues:@{@"fields":@"我被修改了"} cond:@"dataIndex = %ld and dataGroup = %ld",12,12,nil];
+    BOOL isSucess = [self.database updateObjectClazz:[GAppsDataViewModel class] keyValues:@{@"fields":@"我被修改了"} cond:@"dataIndex = %ld and dataGroup = %ld",12,12,nil];
 }
 
 - (void)updateObject
 {
-NSArray *objects = [self.database getAllObjectsWithClass:[GAppsDataViewModel class]];
-id object = [objects firstObject];
-object.index = 10;
+    NSArray *objects = [self.database getAllObjectsWithClass:[GAppsDataViewModel class]];
+    id object = [objects firstObject];
+    object.index = 10;
 
 /********* 自增主键
-long autoPri = [object g_getAutoPrimaryKey];
-GAppsDataViewModel * dataModel = [GAppsDataViewModel new];
-dataModel.dataID = @"WOSHI_dataID";
-dataModel.fields = @"1234567";
-dataModel.dataGroup = 12;
-dataModel.dataIndex = 12;
-[dataModel setValue:@(autoPri) forKey:GAUTOPRIMARYKEY];
+    long autoPri = [object g_getAutoPrimaryKey];
+    GAppsDataViewModel * dataModel = [GAppsDataViewModel new];
+    dataModel.dataID = @"WOSHI_dataID";
+    dataModel.fields = @"1234567";
+    dataModel.dataGroup = 12;
+    dataModel.dataIndex = 12;
+    [dataModel setValue:@(autoPri) forKey:GAUTOPRIMARYKEY];
 *********/
-[self.database addObject:objects];
+    [self.database addObject:objects];
 }
 
 ```
@@ -220,7 +221,7 @@ BOOL isSucess = [self.database deleteObject:[datas firstObject]];
 ```objc
 - (void)querySqlTableCount
 {
-long count = [self.database countInDataBaseWithClass:[GAppsDataViewModel class] withTableName:nil cond:nil];
+    long count = [self.database countInDataBaseWithClass:[GAppsDataViewModel class] withTableName:nil cond:nil];
 }
 ```
 支持
