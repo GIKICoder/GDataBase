@@ -13,9 +13,9 @@
 /**
  获取sqlite 保留字段集合
  
- @return NSDictionary
+ @return NSArray
  */
-+ (NSDictionary *)getSQLiteReservedWords;
++ (NSArray *)getSQLiteReservedWords;
 
 /**
  base64 加密
