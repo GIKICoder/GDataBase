@@ -56,7 +56,7 @@
     NSArray *modelJsons = [NSJSONSerialization JSONObjectWithContentsOfFile:@"model.json"];
     
     self.models = [NSArray yy_modelArrayWithClass:[GAppsDataViewModel class] json:modelJsons];
-
+    
 }
 
 
@@ -77,7 +77,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tableViewCell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableViewCell"];
-        }
+    }
     cell.textLabel.text = @"  ";
     if (indexPath.row == 0) {
         cell.textLabel.text = @"单条数据插入";
@@ -147,7 +147,7 @@
     } else if (indexPath.row == 8) {
         [self saveSqliteReserveWord];
     } else if (indexPath.row == 9) {
-         [self querySqliteReserveWord];
+        [self querySqliteReserveWord];
     }else if (indexPath.row == 10) {
         [self saveBlackListModel];
     }else if (indexPath.row == 11) {
@@ -157,7 +157,7 @@
     } else if (indexPath.row == 13) {
         [self queryMutiKeyModel];
     }else if (indexPath.row == 14) {
-         [self createAutoPrimarykey];
+        [self createAutoPrimarykey];
     }else if (indexPath.row == 15) {
         [self querySqlTableCount];
     }else if (indexPath.row == 16) {
@@ -167,7 +167,7 @@
     }else if (indexPath.row == 18) {
         [self saveMutiData];
     }
-
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -175,6 +175,10 @@
     return 50;
 }
 
+
+/**
+ 单条数据插入
+ */
 - (void)insertOneRowData
 {
     GAppsDataViewModel * model = [[GAppsDataViewModel alloc] init];
@@ -192,6 +196,9 @@
     NSLog(@"isSucess -- %d",isSucess);
 }
 
+/**
+ 批量数据插入(不开启事务)
+ */
 - (void)insertLargeDataNOInTransaction
 {
     BOOL isSucess =   [self.database addObjects:self.models WithTableName:nil];
@@ -202,7 +209,7 @@
 {
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-      BOOL isSucess =   [weakSelf.database addObjectsInTransaction:weakSelf.models WithTableName:nil];
+        BOOL isSucess =   [weakSelf.database addObjectsInTransaction:weakSelf.models WithTableName:nil];
         NSLog(@"isSucess -- %d",isSucess);
     });
 }
@@ -216,7 +223,7 @@
 
 - (void)querySqlData
 {
-
+    
     NSArray *Datas = [self.database getObjectsWithClass:[GAppsDataViewModel class] withTableName:@"GAppsDataViewModel"  whereCond:@"dataID= '%@' AND dataGroup=%d",@"WOSHI_dataID",12];
     
     NSString *jsons = [Datas yy_modelDescription];
@@ -236,17 +243,17 @@
 {
     BOOL isSucess = [self.database updateObjectClazz:[GAppsDataViewModel class] keyValues:@{@"fields":@"我被修改了"} cond:@"dataIndex = %ld and dataGroup = %ld",12,12,nil];
     NSLog(@"isSucess -- %d",isSucess);
-
+    
 }
 
 - (void)querySelectSqlData
 {
     
-   NSArray *  array = [[[[[[self.database selectClazz:[GAppsDataViewModel class]]
-                           whereProperty:@"dataID"] equal:@"WOSHI_dataID"]
-                         orderby:@"dataID" asc:YES]
-                        limit:10]
-                       queryObjectsWithClazz:[GAppsDataViewModel class]];
+    NSArray *  array = [[[[[[self.database selectClazz:[GAppsDataViewModel class]]
+                            whereProperty:@"dataID"] equal:@"WOSHI_dataID"]
+                          orderby:@"dataID" asc:YES]
+                         limit:10]
+                        queryObjectsWithClazz:[GAppsDataViewModel class]];
     
     NSString *jsons = [array yy_modelDescription];
     NSLog(@"alldata__ %@",jsons);
@@ -266,8 +273,8 @@
     model1.add = @"add";
     model1.as = @"as";
     model1.desc = @"desc";
-   BOOL isSucess =   [self.database addObject:model];
-     [self.database addObject:model1];
+    BOOL isSucess =   [self.database addObject:model];
+    [self.database addObject:model1];
     NSLog(@"isSucess -- %d",isSucess);
 }
 
@@ -322,7 +329,7 @@
     key2.primaryKey3 = @"primaryKey1";
     key2.other = @"test";
     // key 与key1 所有主键均相同. so key1 会覆盖key
-   BOOL isSucess =  [self.database addObjects:@[key,key1,key2]];
+    BOOL isSucess =  [self.database addObjects:@[key,key1,key2]];
     NSLog(@"isSucess -- %d",isSucess);
 }
 
@@ -377,7 +384,7 @@
 {
     NSArray *objects = [self.database getAllObjectsWithClass:[GAppsDataViewModel class]];
     GAppsDataViewModel* object = [objects firstObject];
-   ///
+    ///
     long autoPri = [object g_getAutoPrimaryKey];
     GAppsDataViewModel * dataModel = [GAppsDataViewModel new];
     dataModel.dataID = @"WOSHI_dataID";

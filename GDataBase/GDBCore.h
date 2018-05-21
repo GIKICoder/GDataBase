@@ -10,5 +10,4 @@
 
 @interface GDBCore : NSObject
 
-
 @end
