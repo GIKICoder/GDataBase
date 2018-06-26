@@ -47,7 +47,7 @@
 - (void)loadDataBase
 {
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    path = [path stringByAppendingString:@"GDATA.db"];
+    path = [path stringByAppendingPathComponent:@"GDATA.db"];
     self.database = [GDataBase databaseWithPath:path];
 }
 
