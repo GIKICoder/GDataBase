@@ -21,7 +21,7 @@
 
 + (instancetype)databaseWithPath:(NSString *)dbPath
 {
-    return [GDataBase databaseWithPath:dbPath isBase64Encode:NO];
+    return [GDataBase databaseWithPath:dbPath isBase64Encode:YES];
 }
 
 + (instancetype)databaseWithPath:(NSString *)dbPath isBase64Encode:(BOOL)isEncode

@@ -48,7 +48,7 @@
 {
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     path = [path stringByAppendingPathComponent:@"GDATA.db"];
-    self.database = [GDataBase databaseWithPath:path];
+    self.database = [GDataBase databaseWithPath:path isBase64Encode:YES];
 }
 
 - (void)loadData
@@ -191,8 +191,9 @@
     model1.fields = @"1234567";
     model1.dataGroup = 12;
     model1.dataIndex = 12;
+    model.name = @"<用户名'是这个>";
     BOOL isSucess = [self.database addObject:model];
-    [self.database addObject:model1];
+    BOOL isSucess2 = [self.database addObject:model1];
     NSLog(@"isSucess -- %d",isSucess);
 }
 
