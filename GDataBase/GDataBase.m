@@ -463,9 +463,9 @@
     return self;
 }
 
-- (instancetype)limit:(int)count
+- (instancetype)limit:(NSInteger)count
 {
-    self.sqlCondition = [NSString stringWithFormat:@"%@ limit %d",self.sqlCondition,count];
+    self.sqlCondition = [NSString stringWithFormat:@"%@ limit %ld",self.sqlCondition,(long)count];
     return self;
 }
 
@@ -477,5 +477,88 @@
         NSAssert(!error, @"SQLCondition is not validatesql -- %@",self.sqlCondition);
     }
     return [self excuteSql:self.sqlCondition withClass:clazz];
+}
+
+- (GDataBase * (^)(Class))selectClazz
+{
+    return ^id(Class clazz){
+        return [self selectClazz:clazz];
+    };
+}
+
+- (GDataBase * (^)(NSString*))selectTableName
+{
+    return ^id(NSString* clazz){
+        return [self selectTableName:clazz];
+    };
+}
+
+- (GDataBase * (^)(NSString*))whereProperty
+{
+    return ^id(NSString* Property){
+        return [self whereProperty:Property];
+    };
+}
+
+- (GDataBase * (^)(NSString*))andProperty
+{
+    return ^id(NSString* Property){
+        return [self andProperty:Property];
+    };
+}
+
+- (GDataBase * (^)(id))equal
+{
+    return ^id(id value){
+        return [self equal:value];
+    };
+}
+
+- (GDataBase * (^)(NSInteger))equalMore
+{
+    return ^id(NSInteger value){
+        return [self equalMore:value];
+    };
+}
+
+- (GDataBase * (^)(NSInteger))equalLess
+{
+    return ^id(NSInteger value){
+        return [self equalLess:value];
+    };
+}
+
+- (GDataBase * (^)(NSInteger))more
+{
+    return ^id(NSInteger value){
+        return [self more:value];
+    };
+}
+
+- (GDataBase * (^)(NSInteger))less
+{
+    return ^id(NSInteger value){
+        return [self less:value];
+    };
+}
+
+- (GDataBase * (^)(NSString *property,BOOL asc))orderby
+{
+    return ^id(NSString *property,BOOL asc){
+        return [self orderby:property asc:asc];
+    };
+}
+- (GDataBase * (^)(NSInteger))limit
+{
+    return ^id(NSInteger value){
+        return [self limit:value];
+    };
+}
+
+- (NSArray * (^)(Class))queryObjectsWithClass
+{
+    return ^id(Class clazz){
+        return [self queryObjectsWithClazz:clazz];
+    };
 }
 @end

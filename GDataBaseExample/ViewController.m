@@ -118,6 +118,8 @@
         cell.textLabel.text = @"从数据库中查询字典集合";
     } else if (indexPath.row == 18) {
         cell.textLabel.text = @"数据嵌套存储";
+    }else if (indexPath.row == 19) {
+        cell.textLabel.text = @"数据查询链式调用";
     }
     return cell;
 }
@@ -166,6 +168,8 @@
         [self querySqlDictionany];
     }else if (indexPath.row == 18) {
         [self saveMutiData];
+    } else if (indexPath.row == 19) {
+         [self querySqlData1];
     }
     
 }
@@ -224,10 +228,30 @@
 
 - (void)querySqlData
 {
-    
     NSArray *Datas = [self.database getObjectsWithClass:[GAppsDataViewModel class] withTableName:@"GAppsDataViewModel"  whereCond:@"dataID= '%@' AND dataGroup=%d",@"WOSHI_dataID",12];
-    
+    NSArray * arrray = self.database
+    .selectTableName(@"GAppsDataViewModel")
+    .whereProperty(@"dataID")
+    .equal(@"WOSHI_dataID")
+    .andProperty(@"dataGroup")
+    .equal(@12)
+    .queryObjectsWithClass(NSClassFromString(@"GAppsDataViewModel"));
     NSString *jsons = [Datas yy_modelDescription];
+    NSLog(@"alldata__ %@",jsons);
+}
+
+- (void)querySqlData1
+{
+    NSArray *Datas = [self.database getObjectsWithClass:[GAppsDataViewModel class] withTableName:@"GAppsDataViewModel"  whereCond:@"dataID= '%@' AND dataGroup=%d",@"WOSHI_dataID",12];
+    /// 链式调用
+    NSArray * arrray = self.database
+    .selectTableName(@"GAppsDataViewModel")
+    .whereProperty(@"dataID")
+    .equal(@"WOSHI_dataID")
+    .andProperty(@"dataGroup")
+    .equal(@12)
+    .queryObjectsWithClass(NSClassFromString(@"GAppsDataViewModel"));
+    NSString *jsons = [arrray yy_modelDescription];
     NSLog(@"alldata__ %@",jsons);
 }
 

@@ -127,9 +127,20 @@
 - (BOOL)removeTableWithClass:(Class)clazz;
 - (BOOL)removeTable:(NSString*)table_name;
 
-
-
 #pragma mark - condition Method
+
+- (GDataBase * (^)(Class))selectClazz;
+- (GDataBase * (^)(NSString*))selectTableName;
+- (GDataBase * (^)(NSString*))whereProperty;
+- (GDataBase * (^)(NSString*))andProperty;
+- (GDataBase * (^)(id))equal;
+- (GDataBase * (^)(NSInteger))equalMore;
+- (GDataBase * (^)(NSInteger))equalLess;
+- (GDataBase * (^)(NSInteger))more;
+- (GDataBase * (^)(NSInteger))less;
+- (GDataBase * (^)(NSString *property,BOOL asc))orderby;
+- (GDataBase * (^)(NSInteger))limit;
+- (NSArray * (^)(Class))queryObjectsWithClass;
 
 - (instancetype)selectClazz:(Class)clazz;
 - (instancetype)selectTableName:(NSString*)tableName;
@@ -141,7 +152,7 @@
 - (instancetype)more:(NSInteger)value;
 - (instancetype)less:(NSInteger)value;
 - (instancetype)orderby:(NSString*)propertyName asc:(BOOL)asc;
-- (instancetype)limit:(int)count;
+- (instancetype)limit:(NSInteger)count;
 - (NSArray*)queryObjectsWithClazz:(Class)clazz;
 
 
