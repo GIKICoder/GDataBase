@@ -24,22 +24,19 @@
         self.sqliteReservedWords = [GDataBaseUtils getSQLiteReservedWords];
         [self connect];
         self.dbQueue = [[FMDatabaseQueue alloc] initWithPath:dbPath];
-        
         NSLog(@"DBFile:%@", self.dbFile);
-        
     }
     return self;
 }
 
-- (void)dealloc{
-    
+- (void)dealloc
+{
     [self close];
     self.dbFile = nil;
     self.dbQueue = nil;
 }
 
 #pragma mark - public Method
-
 
 -(BOOL)isDbFileExist
 {
@@ -52,18 +49,17 @@
 
 #pragma mark - private Method
 
-- (void)close{
-    
+- (void)close
+{
     [_dataBase close];
     _dataBase = nil;
 }
 
-- (void)connect{
-    
+- (void)connect
+{
     if (!_dataBase) {
         _dataBase = [FMDatabase databaseWithPath:self.dbFile];
     }
-    
     if (![_dataBase open]) {
         NSAssert(NO, @"can not open db file");
     } else {
@@ -82,7 +78,6 @@
 
 - (void)tableCheck:(id<GDataObjectProtocol>)data_obj withTableName:(NSString *)tableName
 {
-    
     NSString* table_name = tableName;
     NSArray*  fileds = [data_obj g_getAllProperty];
     Class objClass = [data_obj class];
@@ -140,7 +135,6 @@
         [self createTableSingleKey:db table_name:table_name fileds:fileds primaryKey:primaryKey.firstObject objClass:objClass];
     }
 }
-
 
 - (void)createTableAutoPrimaryKey:(FMDatabase*)db table_name:(NSString*)table_name fileds:(NSArray*)fileds objClass:(Class)objClass
 {
@@ -205,7 +199,6 @@
     [db executeUpdate:sql];
 }
 
-//CREATE TABLE STUDENTS (subjectId TEXT, studentid TEXT, studentname TEXT, constraint pk_id primary key (subjectId, studentid))
 - (void)createTableMutablePK:(FMDatabase*)db table_name:(NSString*)table_name fileds:(NSArray*)fileds primaryKey:(NSArray<NSString *> *)primaryKeyArr objClass:(Class)objClass
 {
     NSMutableArray *keyArr = [[NSMutableArray alloc] initWithCapacity:primaryKeyArr.count];

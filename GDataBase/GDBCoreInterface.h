@@ -14,7 +14,7 @@
 @property (nonatomic, strong, readonly) FMDatabase * dataBase;
 @property (nonatomic, copy  ) NSString * dbFile;
 @property (nonatomic, strong) FMDatabaseQueue * dbQueue;
-/// 是否开启base64编码,默认不开启
+/// 是否开启base64编码,默认开启
 @property (nonatomic, assign) BOOL  isEncode;
 @property (nonatomic, strong) NSArray * sqliteReservedWords;
 

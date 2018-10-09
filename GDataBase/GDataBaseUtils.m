@@ -125,8 +125,6 @@ static const short GDecodingTable[256] = {
 
 + (BOOL)isEmpty:(NSString *)string
 {
-    
-    
     if (!string) {
         return YES;
     } else {
@@ -150,28 +148,23 @@ static const short GDecodingTable[256] = {
 /**
  获取sqlite 保留字段集合
  
- @return NSDictionary
- */
-/**
- 获取sqlite 保留字段集合
- 
- @return NSDictionary
+ @return NSArray
  */
 + (NSArray * )getSQLiteReservedWords
 {
-    return @[@"ABORT" ,
-             @"ACTION"  ,
-             @"ADD"   ,
-             @"AFTER" ,
-             @"ALL"  ,
-             @"ALTER"  ,
-             @"ANALYZE"  ,
-             @"AND"  ,
+    return @[@"ABORT",
+             @"ACTION" ,
+             @"ADD" ,
+             @"AFTER",
+             @"ALL",
+             @"ALTER",
+             @"ANALYZE",
+             @"AND",
              @"AS",
-             @"ASC" ,
-             @"ATTACH" ,
-             @"AUTOINCREMENT" ,
-             @"BEFORE"   ,
+             @"ASC",
+             @"ATTACH",
+             @"AUTOINCREMENT",
+             @"BEFORE",
              @"BEGIN"  ,
              @"BETWEEN"  ,
              @"BY"   ,
