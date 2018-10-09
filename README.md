@@ -18,6 +18,7 @@ Features
 - 无需考虑数据库字段整添,自动处理数据库升级.免去升级烦恼.
 - 支持数据库表存储value base64编/解码.
 - 对模型无侵入,只需遵守相关协议即可.
+- 数据查询支持链式语法调用.
 - 功能以及代码还在更新完善中. 后期会支持更多功能.欢迎star.或者提建议改进
 - 后续会支持创建关联表,建索引等常用功能.
 
@@ -171,6 +172,17 @@ queryObjectsWithClazz:[GAppsDataViewModel class]];
 
 }
 
+/// 链式调用查询db
+- (void)querySelectSqlData
+{
+NSArray * arrray = self.database
+.selectTableName(@"GAppsDataViewModel")
+.whereProperty(@"dataID")
+.equal(@"WOSHI_dataID")
+.andProperty(@"dataGroup")
+.equal(@12)
+.queryObjectsWithClass(NSClassFromString(@"GAppsDataViewModel"));
+}
 ```
 ### 模型更新
 
