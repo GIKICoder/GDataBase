@@ -110,8 +110,7 @@
         rs = [db executeQuery:sql withArgumentsInArray:@[]];
         
         for (NSString* property_name in fileds) {
-            NSString *  property = [self processReservedWord:property_name];
-            if ([rs columnIndexForName:property] == -1) {
+            if ([rs columnIndexForName:property_name] == -1) {
                 [self insertCol:property_name db:db objClass:objClass];
             }
         }
@@ -782,13 +781,7 @@
 
 - (NSString*)DeProcessReservedWord:(NSString*)property_key
 {
-    NSString *str = property_key;
-    if ([self.sqliteReservedWords containsObject:[str uppercaseString]]) {
-        if ([str hasPrefix:@"["] && [str hasSuffix:@"]"]) {
-            str = [str stringByReplacingOccurrencesOfString:@"[" withString:@""];
-            str = [str stringByReplacingOccurrencesOfString:@"]" withString:@""];
-        }
-    }
-    return str;
+    return property_key;
 }
+
 @end

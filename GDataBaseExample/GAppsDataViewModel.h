@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "YYModel.h"
 #import "GDataObjectProtocol.h"
-
+@interface GDataModel : NSObject<GDataObjectProtocol,YYModel>
+@property (nonatomic, strong) NSString * ID;
+@property (nonatomic, assign) NSInteger  index;
+@end
 @interface GAppsDataViewModel : NSObject<GDataObjectProtocol,YYModel>
 @property (nonatomic, strong) NSString  *dataID;
 @property (nonatomic, copy) NSString  *fields;

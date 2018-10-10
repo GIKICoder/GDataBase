@@ -7,7 +7,9 @@
 //
 
 #import "GAppsDataViewModel.h"
-
+@implementation GDataModel
+GDATABASE_IMPLEMENTATION_INJECT(GDataModel)
+@end
 @implementation GAppsDataViewModel
 GDATABASE_IMPLEMENTATION_INJECT(GAppsDataViewModel)
 

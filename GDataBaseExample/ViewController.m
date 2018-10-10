@@ -185,20 +185,26 @@
  */
 - (void)insertOneRowData
 {
-    GAppsDataViewModel * model = [[GAppsDataViewModel alloc] init];
-    model.dataID = @"WOSHI_dataID";
-    model.fields = @"1234567";
-    model.dataGroup = 12;
-    model.dataIndex = 12;
-    GAppsDataViewModel * model1 = [[GAppsDataViewModel alloc] init];
-    model1.dataID = @"WOSHI_dataID2";
-    model1.fields = @"1234567";
-    model1.dataGroup = 12;
-    model1.dataIndex = 12;
-    model.name = @"<用户名'是这个>";
+//    GAppsDataViewModel * model = [[GAppsDataViewModel alloc] init];
+//    model.dataID = @"WOSHI_dataID";
+//    model.fields = @"1234567";
+//    model.dataGroup = 12;
+//    model.dataIndex = 12;
+//    GAppsDataViewModel * model1 = [[GAppsDataViewModel alloc] init];
+//    model1.dataID = @"WOSHI_dataID2";
+//    model1.fields = @"1234567";
+//    model1.dataGroup = 12;
+//    model1.dataIndex = 12;
+//    model.name = @"<用户名'是这个>";
+//    BOOL isSucess = [self.database addObject:model];
+//    BOOL isSucess2 = [self.database addObject:model1];
+    GDataModel * model = [GDataModel new];
+    model.ID = @"model";
+    model.index = 23;
     BOOL isSucess = [self.database addObject:model];
-    BOOL isSucess2 = [self.database addObject:model1];
-    NSLog(@"isSucess -- %d",isSucess);
+   
+    NSArray * array = [self.database getAllObjectsWithClass:[GDataModel class] withTableName:NSStringFromClass(GDataModel.class)];
+     NSLog(@"isSucess -- %d",isSucess);
 }
 
 /**
