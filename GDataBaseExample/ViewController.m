@@ -54,9 +54,7 @@
 - (void)loadData
 {
     NSArray *modelJsons = [NSJSONSerialization JSONObjectWithContentsOfFile:@"model.json"];
-    
     self.models = [NSArray yy_modelArrayWithClass:[GAppsDataViewModel class] json:modelJsons];
-    
 }
 
 
@@ -169,7 +167,7 @@
     }else if (indexPath.row == 18) {
         [self saveMutiData];
     } else if (indexPath.row == 19) {
-         [self querySqlData1];
+        [self querySqlData1];
     }
     
 }
@@ -198,13 +196,13 @@
     model.name = @"<用户名'是这个>";
     BOOL isSucess = [self.database addObject:model];
     BOOL isSucess2 = [self.database addObject:model1];
-//    GDataModel * model = [GDataModel new];
-//    model.ID = @"model";
-//    model.index = 23;
-//    BOOL isSucess = [self.database addObject:model];
-//
-//    NSArray * array = [self.database getAllObjectsWithClass:[GDataModel class] withTableName:NSStringFromClass(GDataModel.class)];
-//     NSLog(@"isSucess -- %d",isSucess);
+    //    GDataModel * model = [GDataModel new];
+    //    model.ID = @"model";
+    //    model.index = 23;
+    //    BOOL isSucess = [self.database addObject:model];
+    //
+    //    NSArray * array = [self.database getAllObjectsWithClass:[GDataModel class] withTableName:NSStringFromClass(GDataModel.class)];
+    //     NSLog(@"isSucess -- %d",isSucess);
 }
 
 /**
@@ -214,6 +212,17 @@
 {
     BOOL isSucess =   [self.database addObjects:self.models WithTableName:nil];
     NSLog(@"isSucess -- %d",isSucess);
+    /*
+    NSArray *modelJsons = [NSJSONSerialization JSONObjectWithContentsOfFile:@"model2.json"];
+    NSArray * array = [NSArray yy_modelArrayWithClass:[GAppsDataViewModel class] json:modelJsons];
+    CFTimeInterval startTime = CACurrentMediaTime();
+    
+    BOOL isSucess =   [self.database addObjects:array WithTableName:@"newTable2"];
+    NSLog(@"isSucess -- %d",isSucess);
+    CFTimeInterval endTime = CACurrentMediaTime();
+    CFTimeInterval consumingTime = endTime - startTime;
+    NSLog(@"耗时：%@", @(consumingTime));
+    */
 }
 
 - (void)insertLargeData
@@ -223,6 +232,29 @@
         BOOL isSucess =   [weakSelf.database addObjectsInTransaction:weakSelf.models WithTableName:nil];
         NSLog(@"isSucess -- %d",isSucess);
     });
+    /*
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSArray *modelJsons = [NSJSONSerialization JSONObjectWithContentsOfFile:@"model2.json"];
+        NSArray * array = [NSArray yy_modelArrayWithClass:[GAppsDataViewModel class] json:modelJsons];
+        CFTimeInterval startTime = CACurrentMediaTime();
+        BOOL isSucess =   [weakSelf.database addObjectsInTransaction:array WithTableName:@"NewTable"];
+        NSLog(@"isSucess -- %d",isSucess);
+        CFTimeInterval endTime = CACurrentMediaTime();
+        CFTimeInterval consumingTime = endTime - startTime;
+        NSLog(@"批量插入耗时：%@", @(consumingTime));
+        
+        {
+            CFTimeInterval startTime = CACurrentMediaTime();
+            NSArray * all = [self.database getAllObjectsWithClass:[GAppsDataViewModel class] withTableName:@"NewTable"];
+            NSString *jsons = [all yy_modelDescription];
+            NSLog(@"alldata__ %@",jsons);
+            CFTimeInterval endTime = CACurrentMediaTime();
+            CFTimeInterval consumingTime = endTime - startTime;
+            NSLog(@"读取耗时：%@", @(consumingTime));
+        }
+    });
+     */
 }
 
 - (void)readSqlData

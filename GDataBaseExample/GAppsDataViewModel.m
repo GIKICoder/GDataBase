@@ -13,10 +13,10 @@ GDATABASE_IMPLEMENTATION_INJECT(GDataModel)
 @implementation GAppsDataViewModel
 GDATABASE_IMPLEMENTATION_INJECT(GAppsDataViewModel)
 
-- (NSArray<NSString *> *)g_GetCustomPrimarykey
-{
-    return @[@"dataID"];
-}
+//- (NSArray<NSString *> *)g_GetCustomPrimarykey
+//{
+//    return @[@"dataID"];
+//}
 
 
 + (nullable NSDictionary<NSString *, id> *)modelCustomPropertyMapper

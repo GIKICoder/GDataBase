@@ -66,7 +66,7 @@
     if (!tableName || [tableName isEqualToString:@""]) {
         tableName = NSStringFromClass([obj class]);
     }
-    [self tableCheck:obj];
+    [self tableCheck:obj withTableName:tableName];
     
     __block BOOL isSuccess = NO;
     [self.dbQueue inDatabase:^(FMDatabase *db) {
@@ -81,8 +81,12 @@
     if (!objs || objs.count <= 0) {
         return NO;
     }
-    
-    [self tableCheck:objs[0]];
+    if (tableName.length > 0) {
+         [self tableCheck:objs[0] withTableName:tableName];
+    } else {
+        [self tableCheck:objs[0]];
+    }
+   
     __block NSMutableArray *array = [NSMutableArray array];
     __block NSString *sheetName = tableName;
     [self.dbQueue inDatabase:^(FMDatabase * _Nonnull db) {
@@ -107,7 +111,11 @@
         return NO;
     }
     
-    [self tableCheck:objs[0]];
+    if (tableName.length > 0) {
+        [self tableCheck:objs[0] withTableName:tableName];
+    } else {
+        [self tableCheck:objs[0]];
+    }
     __block NSMutableArray *array = [NSMutableArray array];
     __block NSString *sheetName = tableName;
     [self.dbQueue inTransaction:^(FMDatabase * _Nonnull db, BOOL * _Nonnull rollback) {

@@ -27,6 +27,7 @@
 		2B072FE21F5D9C990002BF0B /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B072FDD1F5D9C990002BF0B /* model.json */; };
 		2B072FE31F5D9C990002BF0B /* NSJSONSerialization+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FDF1F5D9C990002BF0B /* NSJSONSerialization+Utils.m */; };
 		2B072FE41F5D9C990002BF0B /* SQLiteReserveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B072FE11F5D9C990002BF0B /* SQLiteReserveModel.m */; };
+		2BCAF9B3217EF79100633F93 /* model2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BCAF9B2217EF79100633F93 /* model2.json */; };
 		761BB2747522844B6BAC16C8 /* libPods-GDataBaseExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF069136758E11870F26A5A /* libPods-GDataBaseExampleTests.a */; };
 		BD3E11C3F478D605CD75826C /* libPods-GDataBaseExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD41921522E407A3EBA4C94 /* libPods-GDataBaseExampleUITests.a */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		2B072FDF1F5D9C990002BF0B /* NSJSONSerialization+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+Utils.m"; sourceTree = "<group>"; };
 		2B072FE01F5D9C990002BF0B /* SQLiteReserveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteReserveModel.h; sourceTree = "<group>"; };
 		2B072FE11F5D9C990002BF0B /* SQLiteReserveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteReserveModel.m; sourceTree = "<group>"; };
+		2BCAF9B2217EF79100633F93 /* model2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = model2.json; sourceTree = "<group>"; };
 		2C66DB7661C5BB2A6A325893 /* libPods-GDataBaseExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF069136758E11870F26A5A /* libPods-GDataBaseExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GDataBaseExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A4012957001C9423EC571C /* Pods-GDataBaseExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDataBaseExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDataBaseExample/Pods-GDataBaseExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				2B072FD61F5D9C8A0002BF0B /* GTableA.h */,
 				2B072FD71F5D9C8A0002BF0B /* GTableA.m */,
 				2B072FDD1F5D9C990002BF0B /* model.json */,
+				2BCAF9B2217EF79100633F93 /* model2.json */,
 				2B072FDE1F5D9C990002BF0B /* NSJSONSerialization+Utils.h */,
 				2B072FDF1F5D9C990002BF0B /* NSJSONSerialization+Utils.m */,
 				2B072FE01F5D9C990002BF0B /* SQLiteReserveModel.h */,
@@ -365,6 +368,7 @@
 				2B072F9F1F5D9B4F0002BF0B /* LaunchScreen.storyboard in Resources */,
 				2B072F9C1F5D9B4F0002BF0B /* Assets.xcassets in Resources */,
 				2B072F9A1F5D9B4F0002BF0B /* Main.storyboard in Resources */,
+				2BCAF9B3217EF79100633F93 /* model2.json in Resources */,
 				2B072FE21F5D9C990002BF0B /* model.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
